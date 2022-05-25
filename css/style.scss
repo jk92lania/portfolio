@@ -48,6 +48,28 @@ body {
     margin: 0 auto;
 }
 
+.left {
+    position: relative;
+    display: block;
+    width: calc(100% / 4);
+}
+
+.right {
+    position: relative;
+    display: block;
+    width: calc((100% / 4) * 3);
+}
+
+.title {
+    position: relative;
+    display: block;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+/* //공통요소 */
+
 .quickmenu {
     position: relative;
     display: none;
@@ -64,22 +86,26 @@ body {
 .wrap {
     position: relative;
     display: block;
+    background-color: #e9e9e9;
 }
 
 
 /* 상단 */
 .header {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     display: block;
     width: 100%;
-    height: 80px;
     z-index: 99;
-
+    
     .container {
+        height: 80px;
         .logo {
-            position: relative;
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
             display: block;
             width: 60px;
             height: 60px;
@@ -90,6 +116,7 @@ body {
         .nav {
             position: relative;
             display: block;
+            padding-top: 40px;
             .gnb {
                 position: relative;
                 display: block;
@@ -104,7 +131,7 @@ body {
                         position: relative;
                         display: block;
                         font-size: 16px;
-
+                        line-height: 26px;
                     }
                 }
 
@@ -119,8 +146,238 @@ body {
 }
 
 .visual {
-    
+    position: relative;
+    display: block;
+    padding-top: 80px;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        h1 {
+            position: relative;
+            display: block;
+            width: 100%;
+
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            color: #060606;
+            text-transform: uppercase;
+            strong {
+                font-weight: 800;
+            }
+        }
+        .left {
+            .visual-face {
+                position: relative;
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .right {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            .about-box {
+                position: relative;
+                display: block;
+                width: calc(100% / 3);
+
+                padding-left: 16px;
+                margin-bottom: 10px;
+
+                h2 {
+                    position: relative;
+                    display: block;
+                    
+                    font-size: 28px;
+                    color: #060606;
+                    font-weight: 700;
+                    letter-spacing: 1rem;
+                    em {
+                        position: relative;
+                        display: block;
+                        font-size: 14px;
+                        line-height: 28px;
+                        letter-spacing: 0.005rem;
+                        text-transform: uppercase;
+                    }
+                }                
+                .about-info {
+                    position: relative;
+                    display: block;
+
+                    padding-top: 16px;
+                    font-size: 14px;
+                    line-height: 22px; 
+                }
+
+                h3 {
+                    position: relative;
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #777;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                }
+
+                .about-skill {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    padding-top: 12px;
+
+                    .skill-list {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        
+                        li {
+                            position: relative;
+                            display: block;
+                            height: 22px;
+                            float: left;
+                            margin: 2px 4px;
+                            font-size: 0;
+
+                            img {
+                                height: 100%;
+                                image-rendering: -webkit-optimize-contrast;
+                            }
+                        }
+                    }
+                }
+
+                .about-profile {
+                    position: relative;
+                    display: block;
+                    padding-top: 12px;
+                    .profile-list {
+                        position: relative;
+                        display: block;
+                        li {
+                            position: relative;
+                            display: flex;
+                            align-items: flex-end;
+                            margin: 15px 0;
+
+                            &:first-child {
+                                margin-top: 0;
+                            }
+
+                            span {
+                                position: relative;
+                                display: block;
+                                width: calc(100% - 50px);
+
+                                text-align: left;
+                                font-size: 16px;
+                                word-break: keep-all;
+                                
+                                &:first-child {
+                                    width: 50px;
+                                    font-size: 12px;
+                                    color: #777;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+.portraits {
+    position: relative;
+    display: block;
+
+    .container {
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        .left {
+    
+        }
+        .right {
+            .sw-portraits {
+                position: relative;
+                display: block;
+                width: 100%;
+                .inner {
+                    overflow: hidden;
+                }
+                .list {
+                    width: calc((100% - 4vw) / 2);
+                    padding: 1vw;
+                }
+                .portraits-list-1 {
+                    width: 100% !important;
+                }                
+                .swiper-slide {
+                    display:flex;
+                    flex-wrap:wrap;
+                    justify-content: center;
+                    .port-box {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        background-color: #f0f0f0;
+                        padding-bottom: 14px;             
+                        .port-box-img {
+                            position: relative;
+                            display: block;
+                            height: 240px;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                            }              
+                        }
+                        .port-box-title {
+                            position: relative;
+                            display: block;
+                            background-color: transparent;
+                            font-size: 14px;
+                            line-height: 24px;
+
+                            color: #060606;
+                        }
+                        .port-box-info {
+                            position: relative;
+                            display: block;
+                            color: #777;
+                        }
+                    }
+                }
+    
+            }
+        }
+    } 
+}
+
+.about {
+    position: relative;
+    display: block;
+    .container {
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        .left {
+        }
+        .right {
+            .sw-about {
+                
+            }
+        }
+    }
+}
+
+
 
 
 /* 하단 */

@@ -10,107 +10,114 @@ window.onload = function () {
   });
 
   // gotop button hide
-  let quickmenu = $('.quickmenu');
-  let topmenu = $('.topmenu');
-  let header_h = $('.header').height();
-  let visual_h = $('.visual').height();
-  let port_top = $('.portfolio').offset().top - header_h;
-  let skill_top = $('.skill').offset().top - header_h;
-  let about_top = $('.about').offset().top - header_h;
-  let life_top = $('.life').offset().top - header_h;
-  let gnbLink = $('.gnb li a');
-  let gnbLinkPos = [ about_top, port_top, skill_top, life_top];
+  // let quickmenu = $('.quickmenu');
+  // let topmenu = $('.topmenu');
+  // let header_h = $('.header').height();
+  // let visual_h = $('.visual').height();
+  // let port_top = $('.portfolio').offset().top - header_h;
+  // let skill_top = $('.skill').offset().top - header_h;
+  // let about_top = $('.about').offset().top - header_h;
+  // let life_top = $('.life').offset().top - header_h;
+  // let gnbLink = $('.gnb li a');
+  // let gnbLinkPos = [ about_top, port_top, skill_top, life_top];
 
-  function makeTop() {
-    port_top = $('.portfolio').offset().top - header_h;
-    skill_top = $('.skill').offset().top - header_h;
-    about_top = $('.about').offset().top - header_h;
-    life_top = $('.life').offset().top - header_h;
-    gnbLinkPos = [ about_top, port_top, skill_top, life_top];
-  };
+  // function makeTop() {
+  //   port_top = $('.portfolio').offset().top - header_h;
+  //   skill_top = $('.skill').offset().top - header_h;
+  //   about_top = $('.about').offset().top - header_h;
+  //   life_top = $('.life').offset().top - header_h;
+  //   gnbLinkPos = [ about_top, port_top, skill_top, life_top];
+  // };
 
-  $(window).resize(function(){
-    makeTop();
-    contact_icon_resize();
-  });
+  // $(window).resize(function(){
+  //   makeTop();
+  //   contact_icon_resize();
+  // });
 
-  $(window).scroll(function () {
-    let nowTop = $(this).scrollTop();
-    if (nowTop > parseInt(visual_h)) {
-      topmenu.removeClass('topmenu-hide');
-    } else {
-      topmenu.removeClass('topmenu-hide');
-      topmenu.addClass('topmenu-hide');
-    }
+  // $(window).scroll(function () {
+  //   let nowTop = $(this).scrollTop();
+  //   if (nowTop > parseInt(visual_h)) {
+  //     topmenu.removeClass('topmenu-hide');
+  //   } else {
+  //     topmenu.removeClass('topmenu-hide');
+  //     topmenu.addClass('topmenu-hide');
+  //   }
 
-    animateNowPos(nowTop);   
-  });
+  //   animateNowPos(nowTop);   
+  // });
 
-  quickmenu.mouseenter(function(){
-    $('.quickmenu-icon').removeClass('quickmenu-icon-active');
-    $('.quickmenu-icon').addClass('quickmenu-icon-active');
-  });
-  quickmenu.mouseleave(function(){
-    $('.quickmenu-icon').removeClass('quickmenu-icon-active');
-  });
+  // quickmenu.mouseenter(function(){
+  //   $('.quickmenu-icon').removeClass('quickmenu-icon-active');
+  //   $('.quickmenu-icon').addClass('quickmenu-icon-active');
+  // });
+  // quickmenu.mouseleave(function(){
+  //   $('.quickmenu-icon').removeClass('quickmenu-icon-active');
+  // });
 
-  function animateNowPos(_nowTop) {
-    $.each(gnbLink, function(index, item) {
-      if(_nowTop >=  parseInt(gnbLinkPos[index])) {
-        gnbLink.removeClass('gnb-a-active');
-        gnbLink.eq(index).addClass('gnb-a-active');
-      }else if(_nowTop < parseInt(gnbLinkPos[0])) {
-        gnbLink.removeClass('gnb-a-active');
-      }        
+  // function animateNowPos(_nowTop) {
+  //   $.each(gnbLink, function(index, item) {
+  //     if(_nowTop >=  parseInt(gnbLinkPos[index])) {
+  //       gnbLink.removeClass('gnb-a-active');
+  //       gnbLink.eq(index).addClass('gnb-a-active');
+  //     }else if(_nowTop < parseInt(gnbLinkPos[0])) {
+  //       gnbLink.removeClass('gnb-a-active');
+  //     }        
 
-    });
-  };
+  //   });
+  // };
+
+
+
 
   // gotop button action
-  quickmenu.click(function () {
-    $('html').animate({
-      scrollTop: 0
-    }, 400);
-  });
+  // quickmenu.click(function () {
+  //   $('html').animate({
+  //     scrollTop: 0
+  //   }, 400);
+  // });
+
+
+
+
 
   // 메뉴 누를시 스크롤 이동
-  $.each(gnbLink, function(index, item) {
-    $(this).click(function(event){
-      event.preventDefault();
-      $('html').animate({
-        scrollTop : gnbLinkPos[index]
-      }, 400);
-    });
-  });
+  // $.each(gnbLink, function(index, item) {
+  //   $(this).click(function(event){
+  //     event.preventDefault();
+  //     $('html').animate({
+  //       scrollTop : gnbLinkPos[index]
+  //     }, 400);
+  //   });
+  // });
 
-  // m-menu 
-  let m_btn_list = $('.m-btn-list');
-  let m_menu_wrap = $('.m-menu-wrap');
-  let m_menu = $('.m-menu');
-  m_btn_list.click(function(){
-    $(this).toggleClass('menu-more-close');
-    m_menu_wrap.toggleClass('m-menu-active');    
-  });
-  m_menu_wrap.click(function(){
-    m_btn_list.toggleClass('menu-more-close');
-    $(this).toggleClass('m-menu-active');  
-  });
-  m_menu.click(function(event){
-    event.stopPropagation();
-  });
+  // // m-menu 
+  // let m_btn_list = $('.m-btn-list');
+  // let m_menu_wrap = $('.m-menu-wrap');
+  // let m_menu = $('.m-menu');
+  // m_btn_list.click(function(){
+  //   $(this).toggleClass('menu-more-close');
+  //   m_menu_wrap.toggleClass('m-menu-active');    
+  // });
+  // m_menu_wrap.click(function(){
+  //   m_btn_list.toggleClass('menu-more-close');
+  //   $(this).toggleClass('m-menu-active');  
+  // });
+  // m_menu.click(function(event){
+  //   event.stopPropagation();
+  // });
 
-    // m-menu 누를시 스크롤 이동
-    let m_gnbLink = $('.m-gnb li a');
-    $.each(m_gnbLink, function(index, item) {
-      $(this).click(function(event){
-        event.preventDefault();
-        m_btn_list.toggleClass('menu-more-close');
-        m_menu_wrap.toggleClass('m-menu-active');           
-        $('html').animate({
-          scrollTop : gnbLinkPos[index]
-        }, 400);
-      });
-    });
+  //   // m-menu 누를시 스크롤 이동
+  //   let m_gnbLink = $('.m-gnb li a');
+  //   $.each(m_gnbLink, function(index, item) {
+  //     $(this).click(function(event){
+  //       event.preventDefault();
+  //       m_btn_list.toggleClass('menu-more-close');
+  //       m_menu_wrap.toggleClass('m-menu-active');           
+  //       $('html').animate({
+  //         scrollTop : gnbLinkPos[index]
+  //       }, 400);
+  //     });
+  //   });
   
 
 
@@ -141,548 +148,12 @@ window.onload = function () {
   sw_about = new Swiper('.sw-about', sw_about_obj);
 
 
-  // mbti 그래프
-  // let mbti_e_value = 29.03;
-  // let mbti_i_value = 25.28;
-  // let mbti_n_value = 12.69;
-  // let mbti_s_value = 11.23;
-  // let mbti_f_value = 37.4;
-  // let mbti_t_value = 51.6;
-  // let mbti_p_value = 0.78;
-  // let mbti_j_value = 6.59;
-  let mbti_entj = 67.9;
-  let mbti_estj = 66.75;
-  let mbti_intp = 66;
-  let mbti_istp = 65.05;
-  let mbti_entp = 60;
-  let mbti_estp = 56.95;
-  let mbti_intj = 52.65;
-  let mbti_enfp = 49.75;
 
-
-  let mbti_chart = bb.generate({
-    
-    data: {
-      x: "x",
-      columns: [
-        ["x", "ENTJ", "ESTJ", "INTP", "ISTP", "ENTP", "ESTP", "INTJ", "INFP"],
-        ["I", 
-        mbti_entj, 
-        mbti_estj, 
-        mbti_intp, 
-        mbti_istp, 
-        mbti_entp, 
-        mbti_estp, 
-        mbti_intj, 
-        mbti_enfp]
-      ],
-      type: "radar", // for ESM specify as: radar()
-      colors : {
-        ENTJ : "#4D7080"
-      },
-      labels: true
-    },
-    radar: {
-      axis: {
-        max: 80,
-        text: {
-          position: {
-            x: -20,
-            y: -5
-          }
-        }        
-      },
-      level: {
-        depth: 4
-      },
-      direction: {
-        clockwise: true
-      }, 
-      width : {
-        ratio : 0.9
-      },    
-    },
-    
-    bindto: "#mbtiChart"
-  });
-
-  setTimeout(function(){
-    mbti_chart.data.colors({            
-      ENTJ: d3.rgb("#A3C0CC").darker(1)
-    });
-  }, 2000);
-
-  // let mbti_chart = bb.generate({
-    
-  //   data: {
-  //     x: "x",
-  //     columns: [
-  //       ["x",
-  //       "내향/외향",
-  //       "감각/직관",
-  //       "감정/사고",
-  //       "인식/판단",
-  //     ],
-  //       // ["x", "외향", "내향", "감각", "직관", "사고", "감정", "판단", "인식"],
-  //       ["ENTJ", 0, 
-  //       0, 
-  //       0, 
-  //       0, 
-  //     ],
-  //     [
-  //       "else",
-  //       -0, 
-  //       -0, 
-  //       -0, 
-  //       -0
-
-  //     ]
-  //     ],
-  //     type: "bar", // for ESM specify as: radar()
-  //     colors : {
-  //       ENTJ : "#4D7080",
-  //       else : "#b3cbd5"
-  //     },
-  //     groups : [
-  //       ["ENTJ",
-  //       "else"]
-  //     ],
-  //     labels: {
-  //       format : function(v, id) {
-  //         return Math.abs(v);
-  //       }
-  //     }
-  //   },
-  //   axis : {
-  //     rotated : true,
-  //     x : {
-  //       type: "category",
-  //       tick: {
-  //         tooltip: true
-  //       } 
-  //     },
-  //     y : {
-  //       tick : {
-  //         format : function(v) {
-  //           return Math.abs(v);
-  //         }
-  //       },
-  //     }
-  //   },
-  //   grid: {
-  //     y: {
-  //       show: true,
-  //       lines: [
-  //         {
-  //           value: 0,
-  //           class: "base-line"
-  //         }
-  //       ]
-  //     }
-  //   },
-  //   bar : {
-  //     width : {
-  //       ratio : 0.9,
-  //       max : 30
-  //     }
-  //   },
-  //   tooltip: {
-  //     format: {
-  //       value: function(v) {
-  //     return Math.abs(v);
-  //    }
-  //     }
-  //   },
-    
-  //   bindto: "#mbtiChart"
-  // });
-
-  // setTimeout(function(){
-  //   mbti_chart.load({
-  //     columns: [
-  //       ["x",
-  //       "내향/외향",
-  //       "감각/직관",
-  //       "감정/사고",
-  //       "인식/판단",
-  //     ],
-  //       // ["x", "외향", "내향", "감각", "직관", "사고", "감정", "판단", "인식"],
-  //       ["ENTJ", mbti_e_value, 
-  //       mbti_n_value, 
-  //       mbti_t_value, 
-  //       mbti_j_value, 
-  //     ],
-  //     [
-  //       "else",
-  //       -mbti_i_value, 
-  //       -mbti_s_value, 
-  //       -mbti_f_value, 
-  //       -mbti_p_value
-
-  //     ]
-  //     ]
-  //   });
-  // }, 1000);
-
- 
-
-  // mbti slide
-  //   let mbti_data = ['Te', 'Ni', 'Se', 'Fi'];
-  let sw_mbti = new Swiper(".sw-mbti", {
-    slidesPerView: 1,
-    // direction: "vertical",
-    spaceBetween: 0,
-    // autoHeight: true,
-    centeredSlides: true,
-    pagination: {
-      el: ".sw-mbti-pg",
-      clickable: true,
-      type: "progressbar",
-      //   renderBullet: function (index, className) {              
-      //     return '<div class="' + className + '"><span class="mbti-entj">' + (mbti_data[index]) + '</span></div>';
-      //   }
-    },
-  });
-
-
-  // profile slide
-  let sw_profile = new Swiper(".sw-profile", {
-    slidesPerView: 2,
-    spaceBetween: 0,
-    breakpoints: {
-      1000: {
-        slidesPerView: 4,
-
-      },
-      640: {
-        slidesPerView: 3,
-
-      },
-    }
-  });
-
-  // skill html
-  let barHtml = new ProgressBar.Circle(skillHtml, {
-    strokeWidth: 4,
-    color: '#FFEA82',
-    trailColor: '#eee',
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    svgStyle: null,
-    text: {
-      value: '',
-      alignToBottom: false
-    },
-    from: {
-      color: '#806E59'
-    },
-    to: {
-      color: '#806E59'
-    },
-    // Set default step function for all animate calls
-    step: (state, barHtml) => {
-      barHtml.path.setAttribute('stroke', state.color);
-      var value = Math.round(barHtml.value() * 100);
-      if (value === 0) {
-        barHtml.setText('');
-      } else {
-        // barHtml.setText(value);
-      }
-
-      barHtml.text.style.color = state.color;
-    }
-  });
-  barHtml.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  barHtml.text.style.fontSize = '2rem';
-  barHtml.animate(0.98);
-
-
-  // skill css
-  let barCss = new ProgressBar.Circle(skillCss, {
-    strokeWidth: 4,
-    color: '#FFEA82',
-    trailColor: '#eee',
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    svgStyle: null,
-    text: {
-      value: '',
-      alignToBottom: false
-    },
-    from: {
-      color: '#806E59'
-    },
-    to: {
-      color: '#806E59'
-    },
-    // Set default step function for all animate calls
-    step: (state, barCss) => {
-      barCss.path.setAttribute('stroke', state.color);
-      var value = Math.round(barCss.value() * 100);
-      if (value === 0) {
-        barCss.setText('');
-      } else {
-        // barCss.setText(value);
-      }
-
-      barCss.text.style.color = state.color;
-    }
-  });
-  barCss.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  barCss.text.style.fontSize = '2rem';
-  barCss.animate(0.97);
-
-
-  // skill js
-  let barJs = new ProgressBar.Circle(skillJs, {
-    strokeWidth: 4,
-    color: '#FFEA82',
-    trailColor: '#eee',
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    svgStyle: null,
-    text: {
-      value: '',
-      alignToBottom: false
-    },
-    from: {
-      color: '#806E59'
-    },
-    to: {
-      color: '#806E59'
-    },
-    // Set default step function for all animate calls
-    step: (state, barJs) => {
-      barJs.path.setAttribute('stroke', state.color);
-      var value = Math.round(barJs.value() * 100);
-      if (value === 0) {
-        barJs.setText('');
-      } else {
-        // barJs.setText(value);
-      }
-
-      barJs.text.style.color = state.color;
-    }
-  });
-  barJs.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  barJs.text.style.fontSize = '2rem';
-  barJs.animate(0.85);
-
-  // skill jquery
-  let barJq = new ProgressBar.Circle(skillJq, {
-    strokeWidth: 4,
-    color: '#FFEA82',
-    trailColor: '#eee',
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    svgStyle: null,
-    text: {
-      value: '',
-      alignToBottom: false
-    },
-    from: {
-      color: '#806E59'
-    },
-    to: {
-      color: '#806E59'
-    },
-    // Set default step function for all animate calls
-    step: (state, barJq) => {
-      barJq.path.setAttribute('stroke', state.color);
-      var value = Math.round(barJq.value() * 100);
-      if (value === 0) {
-        barJq.setText('');
-      } else {
-        // barJq.setText(value);
-      }
-
-      barJq.text.style.color = state.color;
-    }
-  });
-  barJq.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  barJq.text.style.fontSize = '2rem';
-  barJq.animate(0.62);
-
-  // skill 반응형
-  let barRes = new ProgressBar.Circle(skillRs, {
-    strokeWidth: 4,
-    color: '#FFEA82',
-    trailColor: '#eee',
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    svgStyle: null,
-    text: {
-      value: '',
-      alignToBottom: false
-    },
-    from: {
-      color: '#806E59'
-    },
-    to: {
-      color: '#806E59'
-    },
-    // Set default step function for all animate calls
-    step: (state, barRes) => {
-      barRes.path.setAttribute('stroke', state.color);
-      var value = Math.round(barRes.value() * 100);
-      if (value === 0) {
-        barRes.setText('');
-      } else {
-        // barRes.setText(value);
-      }
-
-      barRes.text.style.color = state.color;
-    }
-  });
-  barRes.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  barRes.text.style.fontSize = '2rem';
-  barRes.animate(0.91);
-
-  // skill github
-  let barGit = new ProgressBar.Circle(skillGit, {
-    strokeWidth: 4,
-    color: '#FFEA82',
-    trailColor: '#eee',
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    svgStyle: null,
-    text: {
-      value: '',
-      alignToBottom: false
-    },
-    from: {
-      color: '#806E59'
-    },
-    to: {
-      color: '#806E59'
-    },
-    // Set default step function for all animate calls
-    step: (state, barGit) => {
-      barGit.path.setAttribute('stroke', state.color);
-      var value = Math.round(barGit.value() * 100);
-      if (value === 0) {
-        barGit.setText('');
-      } else {
-        // barRes.setText(value);
-      }
-
-      barGit.text.style.color = state.color;
-    }
-  });
-  barGit.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  barGit.text.style.fontSize = '2rem';
-  barGit.animate(0.75);
-
-  // skill scss
-  let barScss = new ProgressBar.Circle(skillScss, {
-    strokeWidth: 4,
-    color: '#FFEA82',
-    trailColor: '#eee',
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    svgStyle: null,
-    text: {
-      value: '',
-      alignToBottom: false
-    },
-    from: {
-      color: '#806E59'
-    },
-    to: {
-      color: '#806E59'
-    },
-    // Set default step function for all animate calls
-    step: (state, barScss) => {
-      barScss.path.setAttribute('stroke', state.color);
-      var value = Math.round(barScss.value() * 100);
-      if (value === 0) {
-        barScss.setText('');
-      } else {
-        // barRes.setText(value);
-      }
-
-      barScss.text.style.color = state.color;
-    }
-  });
-  barScss.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  barScss.text.style.fontSize = '2rem';
-  barScss.animate(0.70);
-
-  // skill vue
-  let barVue = new ProgressBar.Circle(skillVue, {
-    strokeWidth: 4,
-    color: '#FFEA82',
-    trailColor: '#eee',
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 1400,
-    svgStyle: null,
-    text: {
-      value: '',
-      alignToBottom: false
-    },
-    from: {
-      color: '#806E59'
-    },
-    to: {
-      color: '#806E59'
-    },
-    // Set default step function for all animate calls
-    step: (state, barVue) => {
-      barVue.path.setAttribute('stroke', state.color);
-      var value = Math.round(barVue.value() * 100);
-      if (value === 0) {
-        barVue.setText('');
-      } else {
-        // barRes.setText(value);
-      }
-
-      barVue.text.style.color = state.color;
-    }
-  });
-  barVue.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-  barVue.text.style.fontSize = '2rem';
-  barVue.animate(0.30);
-
-
-  // skill slide
-  let skill = new Swiper(".sw-skill", {
-    slidesPerView: 2,
-    slidesPerColumn: 1,
-    spaceBetween: 0,
-    watchOverflow : true,
-    slidesPerColumnFill: 'row',
-    breakpoints: {
-      1024: {
-        slidesPerView: 4,
-        slidesPerColumn: 2,
-
-      },
-      768: {
-        slidesPerView: 3,
-        slidesPerColumn: 2,
-      },
-    },
-    pagination : {
-      el : ".sw-skill-pg",
-      clickable : true
-    },
-
-  });
-
-
-  // portfolio data
-  let sw_pf_data = [{
+  // portraits data
+  let sw_port_data = [{
       'name': '팔공티',
       'imgurl': 'images/port_pal_003.png',
-      'imgurlbefore': 'images/port_pal_009.png',
+      'imgurlbefore': 'images/port_pal_004.png',
       'html': 'html',
       'css': 'css',
       'js': 'js',
@@ -698,7 +169,7 @@ window.onload = function () {
     {
       'name': '삼양맛샵',
       'imgurl': 'images/port_deli_003.png',
-      'imgurlbefore': 'images/port_deli_006.png',
+      'imgurlbefore': 'images/port_deli_004.png',
       'html': 'html',
       'css': 'css',
       'js': 'js',
@@ -853,83 +324,26 @@ window.onload = function () {
     },
   ];
 
-  let sw_pf_total = sw_pf_data.length;
-  let sw_pf_html = '';
-  for (let i = 0; i < sw_pf_total; i++) {
-    let temp_data = sw_pf_data[i];
-    sw_pf_html += '<div class="list">';
-    sw_pf_html += '<div class="portfolio-box">';
+  let sw_port_total = sw_port_data.length;
+  let sw_port_html = '';
+  for (let i = 0; i < sw_port_total; i++) {
+    let temp_data = sw_port_data[i];
+    sw_port_html += '<div class="list">';
+    sw_port_html += '<div class="port-box">';
 
-    sw_pf_html += '<div class="pf-box-img"><img src=\"';
-    sw_pf_html += temp_data.imgurlbefore;
-    sw_pf_html += '\" alt="포트폴리오">';
-    sw_pf_html += `<img src="${temp_data.imgurl}" alt="포트폴리오">`
-    sw_pf_html +='</div>';
+    sw_port_html += '<div class="port-box-img"><img src=\"';
+    sw_port_html += temp_data.imgurlbefore;
+    sw_port_html += '\" alt="포트폴리오">';
+    sw_port_html +='</div>';
 
-    sw_pf_html += '<div class="pf-box-txt">';
-    sw_pf_html += '<div class="pf-box-txt-bg pf-bg-1"></div>';
-    sw_pf_html += '<div class="pf-box-txt-bg pf-bg-2"></div>';
-    sw_pf_html += '<h3 class="pf-box-name">';
-    sw_pf_html += temp_data.name;
-    sw_pf_html += '</h3>';
+    sw_port_html += `<span class="port-box-title">${temp_data.name}</span>`;
+    
+    sw_port_html += `<span class="port-box-info"><em>${temp_data.day}</em><i>${temp_data.study}</i> 제작</span>`;
 
-    sw_pf_html += '<p class="pf-box-info"><span>';
-    sw_pf_html += `<i>${temp_data.study}</i> 제작 클론 코딩`;
-    sw_pf_html += '</span>제작 기간 : <i>';
-    sw_pf_html += temp_data.day;
-    sw_pf_html += '</i> 일';
-    sw_pf_html += `<em>${temp_data.info}</em>`;
-    sw_pf_html += '</p>';
-    sw_pf_html += '</div>';
-
-    sw_pf_html += '<div class="pf-nav mt-10">';
-    if (temp_data.work) {
-      sw_pf_html += '<button class="pf-btn pf-work" type="button" onclick="window.open(\'';
-      sw_pf_html += temp_data.work;
-      sw_pf_html += '\')">work</button>';
-    }
-    if (temp_data.git) {
-      sw_pf_html += '<button class="pf-btn pf-git" type="button" onclick="window.open(\'';
-      sw_pf_html += temp_data.git;
-      sw_pf_html += '\')">git</button>';
-    }
-    if (temp_data.origin) {
-      sw_pf_html += '<button class="pf-btn pf-ori" type="button" onclick="window.open(\'';
-      sw_pf_html += temp_data.origin;
-      sw_pf_html += '\')">origin</button>';
-    }
-    sw_pf_html += '</div>';
-
-    sw_pf_html += '<div class="pf-label-list clearfix">';
-    if (temp_data.html) {
-      sw_pf_html += '<span class="pf-box-label label-html">html</span>';
-    }
-    if (temp_data.css) {
-      sw_pf_html += '<span class="pf-box-label label-css">css</span>';
-    }
-    if (temp_data.js) {
-      sw_pf_html += '<span class="pf-box-label label-js">js</span>';
-    }
-    if (temp_data.vue) {
-      sw_pf_html += '<span class="pf-box-label">vue</span>';
-    }
-    if (temp_data.pc) {
-      sw_pf_html += '<span class="pf-box-label label-pc">';
-      sw_pf_html += temp_data.pc;
-      sw_pf_html += '</span> ';
-    }
-    if (temp_data.mobile) {
-      sw_pf_html += '<span class="pf-box-label label-mobile">';
-      sw_pf_html += temp_data.mobile;
-      sw_pf_html += '</span> ';
-    }
-    sw_pf_html += '</div>';
-
-
-    sw_pf_html += '</div></div>';
+    sw_port_html += '</div></div>';
   }
-  let sw_pf_wrapper = $('.sw-portfolio .swiper-wrapper');
-  sw_pf_wrapper.html(sw_pf_html);
+  let sw_port_wrapper = $('.sw-portraits .swiper-wrapper');
+  sw_port_wrapper.html(sw_port_html);
   slideAct();
 
   
@@ -939,7 +353,7 @@ window.onload = function () {
     let swiperArr = []; //슬라이드 배열
     
     //슬라이드 배열 생성
-    $(".sw-portfolio").each(function(){
+    $(".sw-portraits").each(function(){
         realInx.push(0);
         swiperArr.push(undefined);
     })
@@ -964,42 +378,38 @@ window.onload = function () {
       slideList();
       function slideList(){
           //리스트 초기화
-          $('.sw-portfolio .list').removeClass('portfolio-list-1');
-          $('.sw-portfolio .list').removeClass('portfolio-list-2');
-          if ($('.sw-portfolio .list').parent().hasClass('swiper-slide')){
+          $('.sw-portraits .list').removeClass('portraits-list-1');
+          if ($('.sw-portraits .list').parent().hasClass('swiper-slide')){
             console.log('e');
-              $('.sw-portfolio .swiper-slide-duplicate').remove();
-              $('.sw-portfolio .list').unwrap('.swiper-slide');
+              $('.sw-portraits .swiper-slide-duplicate').remove();
+              $('.sw-portraits .list').unwrap('.swiper-slide');
           }
           
           //보이는 슬라이드 개수 설정
-          $(".sw-portfolio").each(function(index){
+          $(".sw-portraits").each(function(index){
             console.log("port : " + index);
               if (window.innerWidth > 1200){ //PC 버전
-                  view = 9;
+                  view = 8;
               }else if(window.innerWidth > 480){ //pad 버전
-                  view = 4;
+                  view = 6;
               }else{ //mobile 버전
                   view = 1;
               }
               
-              if(view == 4) {
-                $('.sw-portfolio .list').addClass('portfolio-list-2');
-              } else if(view == 1) {
-                $('.sw-portfolio .list').addClass('portfolio-list-1');
-
-              }
+              if(view == 1) {
+                $('.sw-portraits .list').addClass('portraits-list-1');
+              } 
 
               //리스트 그룹 생성 (swiper-slide element 추가)
               var num = 0;
-              $(this).addClass("sw-portfolio-" + index);
-              $(".sw-portfolio-" + index).find('.list').each(function(i) {
+              $(this).addClass("sw-portraits-" + index);
+              $(".sw-portraits-" + index).find('.list').each(function(i) {
                   $(this).addClass("list"+(Math.floor((i+view)/view)));
                   num = Math.floor((i+view)/view);
               }).promise().done(function(){
                   for (var i = 1; i < num+1; i++) {
-                      $(".sw-portfolio-" + index).find('.list'+i+'').wrapAll('<div class="swiper-slide"></div>');
-                      $(".sw-portfolio-" + index).find('.list'+i+'').removeClass('list'+i+'');
+                      $(".sw-portraits-" + index).find('.list'+i+'').wrapAll('<div class="swiper-slide"></div>');
+                      $(".sw-portraits-" + index).find('.list'+i+'').removeClass('list'+i+'');
                   }
               });
           }).promise().done(function(){
@@ -1008,7 +418,7 @@ window.onload = function () {
       }
       
       function sliderStart(){
-          $(".sw-portfolio").each(function(index){
+          $(".sw-portraits").each(function(index){
               //슬라이드 초기화
               if(swiperArr[index] != undefined) {
                   swiperArr[index].destroy();
@@ -1016,7 +426,7 @@ window.onload = function () {
               }
 
               //슬라이드 실행
-              swiperArr[index] = new Swiper('.sw-portfolio-' + index + ' .inner', {
+              swiperArr[index] = new Swiper('.sw-portraits-' + index + ' .inner', {
                   slidesPerView: 1,
                   initialSlide :Math.floor(realInx[index]/view),
                   resistanceRatio : 0,
@@ -1025,10 +435,10 @@ window.onload = function () {
                   //     nextEl: $('.sw-portfolio-' + index).find('.sw-portfolio-next'),
                   //     prevEl: $('.sw-portfolio-' + index).find('.sw-portfolio-prev'),
                   // },
-                  pagination: {
-                    el: ".sw-portfolio-pg",
-                    clickable: true,
-                  },
+                  // pagination: {
+                  //   el: ".sw-portfolio-pg",
+                  //   clickable: true,
+                  // },
                   on: {
                       slideChange: function () {
                           realInx[index] = this.realIndex*view
@@ -1047,115 +457,31 @@ window.onload = function () {
 
 
   // portfolio slide
-  // let sw_port = new Swiper(".sw-portfolio", {
-  //   slidesPerView: 1,
-  //   slidesPerColumn: 1,
+  // let sw_portraits = new Swiper(".sw-pf-2", {
+  //   slidesPerView: 2,
+  //   slidesPerColumn: 3,
   //   slidesPerColumnFill: 'row',
   //   slidesPerGroup: 1,
   //   spaceBetween: 30,
-  //   // watchOverflow : true,
-  //   pagination: {
-  //     el: ".sw-portfolio-pg",
-  //     clickable: true,
-  //   },
-  //   breakpoints: {
-  //     1200: {
-  //       slidesPerView: 3,
-  //       slidesPerColumn: 3,
-  //       slidesPerGroup: 9,
-  //     },
-  //     800: {
-  //       slidesPerView: 2,
-  //       slidesPerColumn: 2,
-  //       slidesPerGroup: 2,
-  //     }
-  //   }
+    // watchOverflow : true,
+    // pagination: {
+    //   el: ".sw-portfolio-pg",
+    //   clickable: true,
+    // },
+    // breakpoints: {
+    //   1200: {
+    //     slidesPerView: 3,
+    //     slidesPerColumn: 3,
+    //     slidesPerGroup: 9,
+    //   },
+    //   800: {
+    //     slidesPerView: 2,
+    //     slidesPerColumn: 2,
+    //     slidesPerGroup: 2,
+    //   }
+    // }
   // });
 
-  // all portfolio
-  let all_pf_close = $('.all-pf-close');
-  let btn_all = $('.sw-protfolio-all');
-  let all_pf = $('.all-portfolio');
-  btn_all.click(function () {
-    all_pf.stop().slideDown();
-  });
-  all_pf_close.click(function () {
-    all_pf.stop().slideUp();
-  });
-
-  let sw_all_html = '';
-  for (let i = 0; i < sw_pf_total; i++) {
-    let temp_data = sw_pf_data[i];
-    sw_all_html += '<div class="swiper-slide">';
-    sw_all_html += '<div class="all-pf-box">';
-
-    sw_all_html += '<div class="all-pf-img"><img src=\"';
-    sw_all_html += temp_data.imgurl;
-    sw_all_html += '\" alt="포트폴리오"></div>';
-
-    sw_all_html += '<div class="pf-nav all-pf-nav">';
-    if (temp_data.work) {
-      sw_all_html += '<button class="pf-btn pf-work" type="button" onclick="window.open(\'';
-      sw_all_html += temp_data.work;
-      sw_all_html += '\')">work</button>';
-    }
-    if (temp_data.git) {
-      sw_all_html += '<button class="pf-btn pf-git" type="button" onclick="window.open(\'';
-      sw_all_html += temp_data.git;
-      sw_all_html += '\')">git</button>';
-    }
-    if (temp_data.origin) {
-      sw_all_html += '<button class="pf-btn pf-ori" type="button" onclick="window.open(\'';
-      sw_all_html += temp_data.origin;
-      sw_all_html += '\')">origin</button>';
-    }
-    sw_all_html += '</div>';
-
-
-    sw_all_html += '<div class="all-pf-txt">';
-    sw_all_html += '<h3 class="all-pf-name">';
-    sw_all_html += temp_data.name;
-    sw_all_html += '</h3>';
-
-    sw_all_html += '<div class="all-pf-label-list pf-label-list clearfix">';
-    if (temp_data.html) {
-      sw_all_html += '<span class="pf-box-label label-html">html</span>';
-    }
-    if (temp_data.css) {
-      sw_all_html += '<span class="pf-box-label label-css">css</span>';
-    }
-    if (temp_data.js) {
-      sw_all_html += '<span class="pf-box-label label-js">js</span>';
-    }
-    if (temp_data.pc) {
-      sw_all_html += '<span class="pf-box-label label-pc">';
-      sw_all_html += temp_data.pc;
-      sw_all_html += '</span> ';
-    }
-    if (temp_data.mobile) {
-      sw_all_html += '<span class="pf-box-label label-mobile">';
-      sw_all_html += temp_data.mobile;
-      sw_all_html += '</span> ';
-    }
-    sw_all_html += '</div></div>';
-
-
-    sw_all_html += '</div></div>';
-  }
-  let sw_all_wrapper = $('.sw-all .swiper-wrapper');
-  sw_all_wrapper.html(sw_all_html);
-
-
-
-  // all portfolio slide
-  let sw_all = new Swiper(".sw-all", {
-    slidesPerView: 3,
-    slidesPerGroup: 6,
-    slidesPerColumn: 2,
-    spaceBetween: 20,
-    observer: true,
-    observeParents: true,
-  });
 
 
   // life slide  
@@ -1265,7 +591,7 @@ window.onload = function () {
   }
 
 
-  makeTop();
+  // makeTop();
   contact_icon_resize();
 
 }
