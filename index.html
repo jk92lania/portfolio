@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>    
+    <meta charset="utf-8">    
+    <meta http-equiv="X-UACompatible" content="IE=edge">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#d48282">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta name="description" content="프론트앤드를 꿈꾸는 박주경의 포트폴리오입니다."/>
+    <meta name="keywords" content="HTML, CSS, JavaScript, portfolio, clone, 클론코딩, Ju Kyeong Park, 박주경, 포트폴리오, 웹퍼블리셔, web publisher, 퍼블리셔, Publisher, 프론트앤드, Frontend, jquery" />
+    <meta name="author" content="JuKyeong Park" />
+    <meta name="og:site_name" content="박주경 포트폴리오" />
+    <meta name="og:title" content="박주경 포트폴리오" />
+    <meta name="og:description" content="프론트앤드를 꿈꾸는 박주경의 포트폴리오입니다."/>
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://jk92lania.github.io/" />
+    <meta  name="og:image" content="https://jk92lania.github.io/images/logo.png"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>박주경 포트폴리오</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/respond.min.js"></script>    
+    <script src="js/jquery.min.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <script src="js/swiper/swiper.min.js"></script>
+    
+
+    <!-- Progressbar 관련 -->
+    <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
+    
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <!-- Step 1. Load billboard.js and D3.js -->
+<!-- Step 1) Load D3.js -->
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+<!-- Step 2) Load billboard.js with style -->
+<script src="js/billboard/billboard.min.js"></script>
+
+<!-- Load with base style -->
+<link rel="stylesheet" href="js/billboard/billboard.min.css">
+
+<!-- aos 관련 코드 -->
+<link href="js/aos/aos.css" rel="stylesheet">
+<script src="js/aos/aos.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="quickmenu">
+        <div class="quickmenu-more menu-more">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="quickmenu-wrap">
+            <a href="mailto:jk92lania@gmail.com?Subject=Hello%20ju%20kyeong" target="_blank" class="quickmenu-icon">
+                <i class="fas fa-envelope fa-3x" style="color: #806E59;"></i>
+                <span>메일</span>                        
+            </a>
+            <a href="https://open.kakao.com/o/sLMLkWfe" target="_blank" class="quickmenu-icon">
+                <i class="fas fa-comment-dots fa-3x" style="color: #806E59;"></i>
+                <span>채팅</span> 
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScLh6DjYJdE27HIcn12BlIf8Gam3hLIAtaMw0WKW699LBkTww/viewform?usp=sf_link" target="_blank" class="quickmenu-icon">
+                <i class="fas fa-question fa-3x" style="color: #806E59;"></i>
+                <span>문의</span>
+            </a>
+            <a href="asset/portfolio.pdf" download="portfolio" class="quickmenu-icon quickmenu-pdf">
+                <i class="fas fa-download fa-3x" style="color: #806E59;"></i>
+                <span>pdf</span>
+            </a>
+        </div>
+        <span class="topmenu topmenu-hide">
+            <img src="images/arrowhead-up.png" alt="top">
+        </span>
+    </div>
+    
+    <div class="m-btn-list menu-more">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="m-menu-wrap">
+        <div class="m-menu">
+            <ul class="m-gnb">
+                <li><a href="#">about</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">skill</a></li>
+                <li><a href="#">life</a></li>
+            </ul>
+            <ul class="m-contact">
+                <li>
+                    <a href="mailto:jk92lania@gmail.com?Subject=Hello%20ju%20kyeong" target="_blank" class="m-icon">
+                        <i class="fas fa-envelope fa-1x" style="color: #A3C0CC;"></i>
+                        <span>메일</span>                        
+                    </a>
+                </li>
+                <li>                
+                    <a href="https://open.kakao.com/o/sLMLkWfe" target="_blank" class="m-icon">
+                        <i class="fas fa-comment-dots fa-1x" style="color: #A3C0CC;"></i>
+                        <span>채팅</span> 
+                    </a>
+                </li>
+                <li>                
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScLh6DjYJdE27HIcn12BlIf8Gam3hLIAtaMw0WKW699LBkTww/viewform?usp=sf_link" target="_blank" class="m-icon">
+                        <i class="fas fa-question fa-1x" style="color: #A3C0CC;"></i>
+                        <span>문의</span>
+                    </a>
+                </li>
+                <li>                
+                    <a href="asset/portfolio.pdf" download="portfolio" class="m-icon quickmenu-pdf">
+                        <i class="fas fa-download fa-1x" style="color: #A3C0CC;"></i>
+                        <span>pdf</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrap" id="wrap">
+        <!-- 상단 -->
+        <header class="header">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="logo">
+                    <!-- <i>PJK</i> -->
+                </a>
+                <nav class="nav">                    
+                    <ul class="gnb clearfix">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">skill</a></li>
+                        <li><a href="#">life</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+        <!-- //상단 -->
+        <div class="main">
+
+            <!-- 비주얼 -->
+            <section class="visual">
+                <div class="container">
+                    <div class="left">
+                        <div class="visual-face">
+                            <img src="images/about_009.png" alt="박주경">
+                        
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="about-box">
+                            <h1>박주경</h1>
+                            <div class="about-info">
+                                <span>1992 대구</span>
+                                <span>jk92lania@gmail.com</span>
+                                <span>카카오 오픈 채팅</span>
+                            </div>
+                        </div>
+                        <div class="about-box">
+                            <div class="about-profile">
+                                <span><em>2021.12</em>근린컴퓨터아트 학원 PWA_B 수업</span>
+                                <span><em>2020.08</em>다이소 반야월점 근무</span>
+                                <span><em>2017.06</em>SK Servicetop 근무</span>
+                                <span><em>2016.02</em>창원대학교 수료</span>
+                                <span><em>2013.01</em>동아리 모바일엑스</span>
+                            </div>
+                        </div>
+                        <div class="about-box"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- //비주얼 -->
+
+             <!-- 나의 소개 -->
+             <section class="about" id="about">
+                <div class="container">                   
+                    <div class="title">
+                        <span class="title-sub">
+                            cheerful & convivial
+                        </span>
+                        <span class="title-main">
+                            about me
+                        </span>
+                    </div>                    
+                    <div class="swiper-container sw-about">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">                                        
+                                <div class="about-face face-1">
+                                    <!-- <img src="images/about_005.jpg" alt="about"> -->
+                                </div> 
+                                <div class="about-info">                                
+                                    <strong>세상에 배울 것은 많습니다.</strong>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-face face-2">
+                                    <!-- <img src="images/about_002.jpg" alt="about"> -->
+                                </div>
+                                <div class="about-info">                                
+                                    <span>
+                                        해보지 않고는 무엇을 해낼 수 있는지 알 수 없습니다.
+                                        멀리 갈 위험을 감수한 자만이 얼마나 멀리 갈 수 있는지 알 수 있습니다.
+                                        <!-- 초등학교 때는 시대회 달리기 대회에 나가기도 하고, 중학교때는 그림이나 글쓰기 대회에 나가보기도 했습니다. 
+                                        상도 탔지만 수많은 재능이 다양하게 많다는 것을, 그만큼 사람들도 가득하다는 것을 뒤늦게 깨달았습니다.  -->
+                                    </span>                                        
+                                </div>
+                                
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-face face-3">
+                                    <!-- <img src="images/about_003.jpg" alt="about"> -->
+                                </div>
+                                <div class="about-info">                                
+                                    
+                                    <span>
+                                        이와 같이 할 수 있다고 생각하면 성취할 수 있습니다.
+                                        하지만 안 된다고 생각하면 아무것도 이뤄지지 않습니다.
+                                        이는 불변의 법칙입니다.
+                                        <!-- 고등학교, 대학교를 평범하게, 그보다 못하게 다녔다는 좌절에 빠졌습니다. 하지만 75세 나이에 보디빌더 대회에 나간 이야기를, 
+                                        나이 60 넘어 공부해 한의대 합격하신 어르신들 이야기를 들으며  -->
+                                    </span>
+            
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about-face face-4">
+                                    <!-- <img src="images/about_008.png" alt="about"> -->
+                                </div>
+                                <div class="about-info">                                
+                                    
+                                    <span>
+                                        성공은 꿈꾸고 믿고 대담하게 실천함으로써 옵니다.
+                                        언젠가 재능이 피는 그 날까지 저는 지지 않습니다.
+                                        <!-- 제가 늦음이 아닌, 지금 시작이라는 말에 다시 한 번 용기를 내고, 지금의 
+                                        저를 움직이게 하였습니다. 그렇게 저는 나아가는 법을 배우고 있습니다. -->
+                                    </span>
+            
+                                </div>
+                                
+                            </div>                                    
+                            
+                        </div>
+                    </div>                    
+                    
+                </div>                
+            </section>
+            <!-- //나의 소개 -->
+                        
+            <!-- mbti -->
+            <section class="mbti">
+                <div class="container clearfix">
+                    <div class="title">
+                        <span class="title-sub">
+                            mbti
+                        </span>
+                        <span class="title-main">
+                            about me
+                        </span>
+                    </div>
+                    <div class="mbti-wrap">
+                        <div class="flex-left">
+                            
+                            <div id="mbtiChart"></div>
+
+                        </div>
+                        <div class="flex-right">
+                            <div class="mbti-wrap-info">
+                                <div class="swiper-container sw-mbti">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <dl class="mbti-more mbti-extraversion">
+                                                <dt><i class="mbti-more-str">강인한 ENTJ</i></dt>
+                                                <dd>비효율적이거나 비논리적인 절차와 정책은 재빠르게 간파하며 조직의 문제를 해결하기 위해 포괄적인 시스템을 개발 및 수행하고자 합니다.</dd>
+                                                <dd>자신들의 지식을 확장시키고 싶어 하고 그것들을 타인에게 전달하는 것을 즐깁니다.</dd>
+                                                <dd>장기목표와 계획을 설정한 뒤 자신들의 아이디어와 비전을 뚜렷하게 표현하고 관철시키는 타입입니다.</dd>
+                                                <dd>대체로 솔직하며 결단력 있는 사람들입니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <dl class="mbti-more mbti-intuition">
+                                                <dt><i class="mbti-more-str">품격있는 ESTJ</i></dt>
+                                                <dd>결정을 하고자 하고, 이것들을 이행하기 위해 빠르게 움직입니다. 가능한 가장 효율적인 방법으로 결과를 얻는 데에 초점을 맞춥니다.</dd>
+                                                <dd>구체적이고 현실적이며 사실적인 타입으로 프로젝트를 구조화하고 사람들을 조직합니다.</dd>
+                                                <dd>일련의 명확한 논리적 기준을 가지고 있으며 그것을 규칙적으로 따르고, 타인 또한 그렇게 하길 바랍니다.</dd>
+                                                <dd>자신의 계획을 추진해 나갈 때 영향력을 행사하고 싶어합니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <dl class="mbti-more mbti-thinking">
+                                                <dt><i class="mbti-more-str">유연하고 분석적인 INTP</i></dt>
+                                                <dd>추상적이고 이론적인 타입으로 본인의 관심 영역에 있어 논리적이고 이론적인 설명을 하고자 합니다.</dd>
+                                                <dd>타인과의 상호작용보다는 아이디어에 더 관심을 가지고 있는 경향이 있습니다.</dd>
+                                                <dd>관심 분야에 있어서는 문제해결에 깊이 집중하는 모습을 보여줍니다.</dd>
+                                                <dd>언제나 분석적이고 회의적이나 때로는 비판적이기도 합니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <dl class="mbti-more mbti-judging">
+                                                <dt><i class="mbti-more-str">유연하고 관조적인 ISTP</i></dt>
+                                                <dd>문제가 발생할 때까지는 한발 물러서서 조용히 관찰하는 타입이지만, 문제가 발생하면 실행 가능한 해결책을 찾기 위해 발빠르게 움직이는 타입입니다.</dd>
+                                                <dd>문제의 현실적인 원인을 분석하고 핵심을 구체적으로 파악하기 위해 다량의 정보를 처리해내기도 합니다.</dd>
+                                                <dd>원인 및 결과에 지대한 관심을 가지고 있으며 사실을 논리적으로 구조화하고자 하는 타입입니다.</dd>
+                                                <dd>효율성에 가치를 두고 있습니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <dl class="mbti-more mbti-judging">
+                                                <dt><i class="mbti-more-str">독창적인 ENTP</i></dt>
+                                                <dd>상황을 빠르게 이해하며 본인이 느낌 바를 거리낌없이 표현합니다.</dd>
+                                                <dd>활기찬 타입이라 일상적인 일은 지루해하며 같은 일을 같은 방식으로 처리하는 경우는 드뭅니다.</dd>
+                                                <dd>새롭고 도전적인 문제를 해결하는데에 흥미를 가집니다.</dd>
+                                                <dd>개념적인 가능성을 창출하길 원하고 전략적으로 그것들을 분석해내기도 합니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <dl class="mbti-more mbti-judging">
+                                                <dt><i class="mbti-more-str">매사에 유연한 ESTP</i></dt>
+                                                <dd>즉각적인 결과에 초점이 맞춰진 현실적 접근을 선호하는 타입으로 매사에 유연함을 보이고 있습니다.</dd>
+                                                <dd>이론과 개념적인 설명에 대해서는 지루함을 느끼며 문제 해결을 위해 활동적으로 움직이는 성향입니다.</dd>
+                                                <dd>현재 순간에 벌어지고 있는 일에 대해 관심이 많고 남들과 활기차게 할 수 있는 매 순간을 즐기고자 합니다.</dd>
+                                                <dd>감각적인 스타일과 편안함을 추구하며 현실적이고 실제적인 경험을 통해 배워나가는 타입입니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <dl class="mbti-more mbti-judging">
+                                                <dt><i class="mbti-more-str">창의적인 INTJ</i></dt>
+                                                <dd>본인의 아이디어를 실현하길 원하며 목적을 달성하고자 하는 욕구가 강합니다.</dd>
+                                                <dd>사건 일련의 패턴을 빠르게 파악하며 관련된 설명을 광범위하게 하는 동시에 앞으로의 전망을 제시하는 타입입니다.</dd>
+                                                <dd>일을 조직화하고 포괄적으로 수행합니다.</dd>
+                                                <dd>회의적이며 독립적인 성향이 있고 자신과 타인들에 대한 능력과 수행에 높은 기준을 가지고 있습니다.</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <dl class="mbti-more mbti-judging">
+                                                <dt><i class="mbti-more-str">이상적인 INFP</i></dt>
+                                                <dd>이상주의자로 자신에게 의미있는 사람들, 혹은 가치에 충성하는 타입입니다.</dd>
+                                                <dd>본인의 가치와 조화를 이룰 수 있는 것을 원하며, 호기심이 많아 아이디어를 이루기 위한 촉매 역할을 하기도 합니다.</dd>
+                                                <dd>사람의 본질을 그대로 이해하려 하고, 가능성을 성취할 수 있게 곁에서 돕기도 합니다.</dd>
+                                                <dd>어떤 일의 가능성을 보는 경향이 있습니다.</dd>
+                                            </dl>
+                                        </div>
+                                    </div>                                
+                                    <div class="swiper-pagination sw-mbti-pg"></div>
+                                </div>
+                                <!-- <strong>대담한 통솔자, 지도자형</strong> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- //mbti -->
+            
+            <!-- 포트폴리오 -->
+            <section class="portfolio" id="portfolio">
+                <div class="container">
+                    <div class="title">                        
+                        <span class="title-main">
+                            portfolio
+                        </span>
+                    </div>
+                    <div class="sw-portfolio">
+                        <div class="inner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="portfolio-box">                                                                    
+                                        <div class="pf-box-img">
+                                            <img src="images/port_pal_001.jpg" alt="포트폴리오">
+                                        </div>
+                                        <div class="pf-label-list clearfix">
+                                            <span class="pf-box-label label-html">html</span>                                        
+                                            <span class="pf-box-label label-css">css</span>                                        
+                                            <span class="pf-box-label label-js">js</span>
+                                            <span class="pf-box-label label-pc">PC</span>                                        
+                                            <span class="pf-box-label label-mobile">Mobile</span>                                        
+                                        </div>
+                                        <div class="pf-box-txt">
+                                            <h3 class="pf-box-name">팔공티</h3>
+                                            <p class="pf-box-info">
+                                                <span>
+                                                    개인제작 클론 코딩
+                                                </span>
+                                                제작 기간 : 10일
+                                            </p>
+                                        </div>                             
+                                        <div class="pf-nav mt-10">
+                                            <button class="pf-btn pf-work" type="button" onclick="window.open('https://jk92lania.github.io/palgongtea/')">work</button>
+                                            <button class="pf-btn pf-git" type="button" onclick="window.open('https://github.com/jk92lania/palgongtea')">git</button>
+                                            <button class="pf-btn pf-ori" type="button" onclick="window.open('http://www.palgongtea.co.kr/')">origin</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination sw-portfolio-pg"></div> 
+                        <!-- <div class="swiper-button-prev sw-portfolio-prev"></div>
+                        <div class="swiper-button-next sw-portfolio-next"></div> -->
+                    </div>
+
+                </div> 
+                
+            </section>
+            <!-- //포트폴리오 -->
+            
+            <!-- 기술 -->
+            <section class="skill" id="skill">
+                <div class="container">
+                    <div class="skill-wrap">
+                        <div class="flex-left">
+                            <div class="title">                        
+                                <span class="title-main">
+                                    skill
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="flex-right">
+                            <div class="swiper-container sw-skill">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div id="skillHtml" class="skill-progress"></div>
+                                        <div class="skill-info skill-html">
+                                            <img src="images/skill_html3.png" alt="html">
+                                            <h3 class="skill-name">html</h3>
+                                            <!-- <p class="skill-info">
+                                                기본적인 틀 제작이 가능하다
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div id="skillCss" class="skill-progress"></div>
+                                        <div class="skill-info skill-css">
+                                            <img src="images/skill_css3.png" alt="css">
+                                            <h3 class="skill-name">css</h3>
+                                            <!-- <p class="skill-info">
+                                                기본적인 틀 제작이 가능하다
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div id="skillJs" class="skill-progress"></div>
+                                        <div class="skill-info skill-js">
+                                            <img src="images/skill_js3.png" alt="javascript">
+                                            <h3 class="skill-name">js</h3>
+                                            <!-- <p class="skill-info">
+                                                기본적인 틀 제작이 가능하다
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div id="skillJq" class="skill-progress"></div>
+                                        <div class="skill-info skill-jq">
+                                            <img src="images/skill_jq3.png" alt="jquery">
+                                            <h3 class="skill-name">jquery</h3>
+                                            <!-- <p class="skill-info">
+                                                기본적인 틀 제작이 가능하다
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div id="skillRs" class="skill-progress"></div>
+                                        <div class="skill-info skill-res">
+                                            <img src="images/skill_res3.png" alt="반응형">
+                                            <h3 class="skill-name">flex, grid</h3>
+                                            <!-- <p class="skill-info">
+                                                기본적인 틀 제작이 가능하다
+                                            </p> -->
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div id="skillGit" class="skill-progress"></div>
+                                        <div class="skill-info skill-git">
+                                            <img src="images/skill_git3.png" alt="github">
+                                            <h3 class="skill-name">github</h3>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div id="skillScss" class="skill-progress"></div>
+                                        <div class="skill-info skill-scss">
+                                            <img src="images/skill_scss3.png" alt="scss">
+                                            <h3 class="skill-name">scss</h3>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div id="skillVue" class="skill-progress"></div>
+                                        <div class="skill-info skill-vue">
+                                            <img src="images/skill_vue3.png" alt="vue">
+                                            <h3 class="skill-name">vue</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination sw-skill-pg"></div> 
+                            </div> 
+                        </div>
+                    </div>                 
+                </div>
+                
+            </section>
+            <!-- //기술 -->           
+           
+            
+            <!-- 프로필 -->
+            <section class="profile" id="profile">
+                <div class="container clearfix">
+                                            
+                    <div class="left">
+                            <div class="title">                        
+                                <span class="title-main">
+                                    profile
+                                </span>
+                            </div>
+                    </div>
+
+                    <div class="right">
+                            <div class="swiper-container sw-profile">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="profile-box">
+                                            <div class="profile-img"></div>
+                                            <p class="profile-info">창원대학교 정보통신공학과 수료</p>
+                                            <span class="profile-date">2015.08</span>
+        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="profile-box">
+                                            <div class="profile-img"></div>
+                                            <p class="profile-info">앱창작터 iPhone 앱교육 보조</p>
+                                            <span class="profile-date">2013.12</span>
+        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="profile-box">
+                                            <div class="profile-img"></div>
+                                            <p class="profile-info">SK Servicetop 근무</p>
+                                            <span class="profile-date">2017.05</span>
+        
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="profile-box">
+                                            <div class="profile-img"></div>
+                                            <p class="profile-info">다이소 반야월점 근무</p>
+                                            <span class="profile-date">2020.08</span>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+            </section>
+            <!-- //프로필 -->            
+            
+            <!-- 삶 -->
+            <section class="life" id="life">
+                <div class="container">
+                    <div class="title">                        
+                        <span class="title-main">
+                            life
+                        </span>
+                    </div>
+                    <div class="swiper-container sw-life">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="life-box life-1"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-2"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-3"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-4"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-5"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-6"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-7"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-8"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-9"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-10"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-11"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="life-box life-12"></div>
+                                <span class="life-txt">화창한 날, 화려하게 핀</span>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="swiper-pagination sw-life-pg"></div>                    
+                </div>
+                
+            </section>
+            <!-- //삶 -->
+            
+            
+            <!-- contact -->
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="title">                        
+                        <span class="title-main">
+                            contact
+                        </span>
+                    </div>
+                    <div class="contact-wrap">
+                        <a href="mailto:jk92lania@gmail.com?Subject=Hello%20ju%20kyeong" target="_blank" class="email">
+                            <i class="fas fa-envelope fa-9x" style="color: #cdbaa4;"></i>
+                            <span>메일</span>                        
+                        </a>
+                        <a href="https://open.kakao.com/o/sLMLkWfe" target="_blank" class="kakao">
+                            <i class="fas fa-comment-dots fa-9x" style="color: #cdbaa4;"></i>
+                            <span>오픈채팅</span> 
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScLh6DjYJdE27HIcn12BlIf8Gam3hLIAtaMw0WKW699LBkTww/viewform?usp=sf_link" target="_blank" class="survey">
+                            <i class="fas fa-question fa-9x" style="color: #cdbaa4;"></i>
+                            <span>구글문의</span>
+                        </a>
+                        <a href="asset/portfolio.pdf" download="portfolio" class="pdf">
+                            <i class="fas fa-download fa-9x" style="color: #cdbaa4;"></i>
+                            <span>pdf</span>
+                        </a>    
+                    </div>
+                    
+                </div>
+
+
+                
+            </section>
+            <!-- //contact -->
+            
+            
+        </div>
+        <!-- 하단 -->
+        <footer class="footer">
+            <div class="container">
+                <div class="copy">
+                    Copyright 2022. JuKyeong Park All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+        <!-- //하단 -->
+        
+    </div>
+</body>
+</html>
