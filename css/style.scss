@@ -412,14 +412,177 @@ body {
         }
         .right {
             .sw-about {
+                position: relative;
+                display: block;
+                .swiper-slide {
+                    text-align: center;
+                    .about-face {
+                        position: relative;
+                        display: block;
+                        width: 80%;
+                        font-size: 0;
+                        padding-bottom: 80%;
+                        margin: 0 auto;
+                    }
+                    .about-info {
+                        position: relative;
+                        display: inline-block;
+                        width: 100%;
+                        height: 200px;
+                    
+                        font-size: 13px;
+                        line-height: 18px;
+                        letter-spacing: -0.02rem;
+                        color: #333;
+                        word-break: keep-all;
+                        margin-top: 1vw;
+                        padding: 0 0.6vw;
+                    }
+                    
+                    .about-info strong {
+                        width: 100%;
+                        
+                        color: #060606;
+                        font-weight: 800;
+                        font-size: 22px;
+                        letter-spacing: -0.04rem;
+                        line-height: 38px;
+                        word-break: keep-all;
+                        text-align: center;    
+                    }
+
+                    .about-info span {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        text-align: justify;
+                    }
+                    .face-1 {
+                        background: url('../images/about_005.jpg') no-repeat center;
+                        background-size: cover;
+                    }
+                    .face-2 {
+                        background: url('../images/about_002.jpg') no-repeat center;
+                        background-size: cover;
+                    }
+                    .face-3 {
+                        background: url('../images/about_003.jpg') no-repeat center;
+                        background-size: cover;
+                    }
+                    .face-4 {
+                        background: url('../images/about_008.png') no-repeat center;
+                        background-size: cover;
+                    }
+                }
+
+                .swiper-slide-active  {
+                    .about-face {
+                        text-align: right;
+                        width: 90%;
+                        padding-bottom: 90%;
+                    }
+
+                    .about-info {    
+                        width: 90%;
+                    }
+                    
+                }
+                .swiper-slide-next  {
+                    .about-face {
+                        margin-top: 4vw;
+                        margin-left: -3vw;
+                        text-align: left;
+                        width: 116%;
+                        padding-bottom: 116%;
+                        z-index: -1;
+                    }
+
+                    .about-info {
+                        margin-left: -3vw;
+                    }
+                }
+                .swiper-slide-next+.swiper-slide  {
+                    .about-face {
+                        margin-top: 2vw;
+                    }    
+                }
                 
             }
         }
     }
 }
 
+.life {
+    position: relative;
+    display: block;
+    margin: 60px 0 40px;
+    .container {
+        padding: 40px 0;
+        .sw-life {
+            width: 100%;
+            height: 50vw;
+            height: calc(45vw + 180px);
+            .swiper-slide {
+                height: 45vw;                
+                transition: all 0.3s;
+                
+                .life-box {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
 
+                    transition: all 0.3s;
+                    
+                    .life-txt {
+                        position: relative;
+                        display: block;
+                        width: 100%;
 
+                        margin-top: 10px;
+                        font-size: 14px;
+                        color: #A3C0CC;
+
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                &:hover {
+                    .life-box {
+                        aspect-ratio: 1 / 1; 
+                    }
+                }
+
+                .swiper-slide-next {
+                    .life-box {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+.sw-life-small-6 {
+    width: calc((100% - 50% - (10px * 5)) / 5) !important;
+}
+
+.sw-life-big-6 {
+    width: 50% !important;
+}
+
+.sw-life-small-3 {
+    width: calc((100% - 75% - (10px * 2)) / 2) !important;
+}
+
+.sw-life-big-3 {
+    width: 75% !important;
+}
+
+.sw-life-txt-active {
+    font-size: 24px;
+    color: #4D7080;
+}
 
 /* 하단 */
 .footer {
