@@ -9,118 +9,33 @@ window.onload = function () {
   
   });
 
-  // gotop button hide
-  // let quickmenu = $('.quickmenu');
-  // let topmenu = $('.topmenu');
-  // let header_h = $('.header').height();
-  // let visual_h = $('.visual').height();
-  // let port_top = $('.portfolio').offset().top - header_h;
-  // let skill_top = $('.skill').offset().top - header_h;
-  // let about_top = $('.about').offset().top - header_h;
-  // let life_top = $('.life').offset().top - header_h;
-  // let gnbLink = $('.gnb li a');
-  // let gnbLinkPos = [ about_top, port_top, skill_top, life_top];
 
-  // function makeTop() {
-  //   port_top = $('.portfolio').offset().top - header_h;
-  //   skill_top = $('.skill').offset().top - header_h;
-  //   about_top = $('.about').offset().top - header_h;
-  //   life_top = $('.life').offset().top - header_h;
-  //   gnbLinkPos = [ about_top, port_top, skill_top, life_top];
-  // };
-
-  // $(window).resize(function(){
-  //   makeTop();
-  //   contact_icon_resize();
-  // });
-
-  // $(window).scroll(function () {
-  //   let nowTop = $(this).scrollTop();
-  //   if (nowTop > parseInt(visual_h)) {
-  //     topmenu.removeClass('topmenu-hide');
-  //   } else {
-  //     topmenu.removeClass('topmenu-hide');
-  //     topmenu.addClass('topmenu-hide');
-  //   }
-
-  //   animateNowPos(nowTop);   
-  // });
-
-  // quickmenu.mouseenter(function(){
-  //   $('.quickmenu-icon').removeClass('quickmenu-icon-active');
-  //   $('.quickmenu-icon').addClass('quickmenu-icon-active');
-  // });
-  // quickmenu.mouseleave(function(){
-  //   $('.quickmenu-icon').removeClass('quickmenu-icon-active');
-  // });
-
-  // function animateNowPos(_nowTop) {
-  //   $.each(gnbLink, function(index, item) {
-  //     if(_nowTop >=  parseInt(gnbLinkPos[index])) {
-  //       gnbLink.removeClass('gnb-a-active');
-  //       gnbLink.eq(index).addClass('gnb-a-active');
-  //     }else if(_nowTop < parseInt(gnbLinkPos[0])) {
-  //       gnbLink.removeClass('gnb-a-active');
-  //     }        
-
-  //   });
-  // };
-
-
-
-
-  // gotop button action
-  // quickmenu.click(function () {
-  //   $('html').animate({
-  //     scrollTop: 0
-  //   }, 400);
-  // });
-
-
-
-
-
-  // 메뉴 누를시 스크롤 이동
-  // $.each(gnbLink, function(index, item) {
-  //   $(this).click(function(event){
-  //     event.preventDefault();
-  //     $('html').animate({
-  //       scrollTop : gnbLinkPos[index]
-  //     }, 400);
-  //   });
-  // });
-
-  // // m-menu 
-  // let m_btn_list = $('.m-btn-list');
-  // let m_menu_wrap = $('.m-menu-wrap');
-  // let m_menu = $('.m-menu');
-  // m_btn_list.click(function(){
-  //   $(this).toggleClass('menu-more-close');
-  //   m_menu_wrap.toggleClass('m-menu-active');    
-  // });
-  // m_menu_wrap.click(function(){
-  //   m_btn_list.toggleClass('menu-more-close');
-  //   $(this).toggleClass('m-menu-active');  
-  // });
-  // m_menu.click(function(event){
-  //   event.stopPropagation();
-  // });
-
-  //   // m-menu 누를시 스크롤 이동
-  //   let m_gnbLink = $('.m-gnb li a');
-  //   $.each(m_gnbLink, function(index, item) {
-  //     $(this).click(function(event){
-  //       event.preventDefault();
-  //       m_btn_list.toggleClass('menu-more-close');
-  //       m_menu_wrap.toggleClass('m-menu-active');           
-  //       $('html').animate({
-  //         scrollTop : gnbLinkPos[index]
-  //       }, 400);
-  //     });
-  //   });
+  // 메뉴 누를시 스크롤 이동  
+  let port_top = $('.portraits').offset().top;
+  let about_top = $('.about').offset().top;
+  let life_top = $('.life').offset().top;
+  let gnbLink = $('.gnb li a');
+  let gnbLinkPos = [ port_top, about_top, life_top];
+  $.each(gnbLink, function(index, item) {
+    $(this).click(function(event){
+      event.preventDefault();
+      $('html').animate({
+        scrollTop : gnbLinkPos[index]
+      }, 400);
+    });
+  });
   
-
-
+  function makeTop() {
+    port_top = $('.portraits').offset().top;
+    about_top = $('.about').offset().top;
+    life_top = $('.life').offset().top;
+    gnbLinkPos = [ port_top, about_top, life_top];
+  };
+  
+  $(window).resize(function(){
+    makeTop();
+    contact_icon_resize();
+  });
 
 
   // about slide
@@ -183,8 +98,8 @@ window.onload = function () {
     },
     {
       'name': '포트폴리오',
-      'imgurl': 'images/port_prot_003.png',
-      'imgurlbefore': 'images/port_prot_004.png',
+      'imgurl': 'images/port_prot_001.png',
+      'imgurlbefore': 'images/port_prot_002.png',
       'html': 'html',
       'css': 'css',
       'js': 'js',
@@ -194,6 +109,22 @@ window.onload = function () {
       'study': '개인',
       'day': '20',
       'info' : '100% 개인 작업하였습니다. 배운 것을 토대로 제작하였습니다. billboard.js 등을 추가 했습니다.'
+    },
+    {
+      'name': '마시그레이',
+      'imgurl': 'images/port_masi_001.png',
+      'imgurlbefore': 'images/port_masi_002.png',
+      'html': 'html',
+      'css': 'css',
+      'js': 'js',
+      'pc': 'PC',
+      'mobile': 'Mobile',
+      'work': 'https://jk92lania.github.io/masigray/',
+      'git': 'https://github.com/jk92lania/masigray',
+      'origin': 'https://www.masigray.com:5021/main/main.asp',
+      'study': '스터디용',
+      'day': '4',
+      'info' : '현재 수업 진행중입니다.배운 내용을 복습하며 제작하고 있습니다.'
     },
     {
       'name': '생명보험협회',
@@ -331,15 +262,26 @@ window.onload = function () {
     sw_port_html += '<div class="list">';
     sw_port_html += '<div class="port-box">';
 
-    sw_port_html += '<div class="port-box-img"><img src=\"';
-    sw_port_html += temp_data.imgurlbefore;
-    sw_port_html += '\" alt="포트폴리오">';
+    sw_port_html += '<div class="port-box-img">';
+    sw_port_html += `<img src="${temp_data.imgurlbefore}" alt="${temp_data.name}">`
+    sw_port_html += `<img src="${temp_data.imgurl}" alt="${temp_data.name}">`
     sw_port_html +='</div>';
 
     sw_port_html += `<span class="port-box-title">${temp_data.name}</span>`;
     
     sw_port_html += `<span class="port-box-info"><em>${temp_data.day}</em>일 <i>${temp_data.study}</i> 제작</span>`;
-
+    sw_port_html += '<div class="port-box-bt"><ul>';
+    if(temp_data.work) {
+      sw_port_html += `<li><a href="${temp_data.work}">work</a></li>`;
+    }
+    if(temp_data.git) {
+      sw_port_html += `<li><a href="${temp_data.git}">git</a></li>`;
+    }
+    if(temp_data.origin) {
+      sw_port_html += `<li><a href="${temp_data.origin}">origin</a></li>`;
+    }
+    
+    sw_port_html += '</ul></div>';
     sw_port_html += '</div></div>';
   }
   let sw_port_wrapper = $('.sw-portraits .swiper-wrapper');
@@ -387,16 +329,16 @@ window.onload = function () {
           
           //보이는 슬라이드 개수 설정
           $(".sw-portraits").each(function(index){
-            console.log("port : " + index);
+            console.log("innerWidth : " + window.innerWidth);
               if (window.innerWidth > 1200){ //PC 버전
                   view = 8;
               }else if(window.innerWidth > 480){ //pad 버전
                   view = 6;
               }else{ //mobile 버전
-                  view = 1;
+                  view = 2;
               }
               
-              if(view == 1) {
+              if(view == 2) {
                 $('.sw-portraits .list').addClass('portraits-list-1');
               } 
 
@@ -432,13 +374,13 @@ window.onload = function () {
                   resistanceRatio : 0,
                   loop:true,
                   // navigation: {
-                  //     nextEl: $('.sw-portfolio-' + index).find('.sw-portfolio-next'),
-                  //     prevEl: $('.sw-portfolio-' + index).find('.sw-portfolio-prev'),
+                  //     nextEl: $('.sw-portraits-' + index).find('.sw-portfolio-next'),
+                  //     prevEl: $('.sw-portraits-' + index).find('.sw-portfolio-prev'),
                   // },
-                  // pagination: {
-                  //   el: ".sw-portfolio-pg",
-                  //   clickable: true,
-                  // },
+                  pagination: {
+                    el: ".sw-portraits-pg",
+                    clickable: true,
+                  },
                   on: {
                       slideChange: function () {
                           realInx[index] = this.realIndex*view
@@ -456,42 +398,14 @@ window.onload = function () {
   }
 
 
-  // portfolio slide
-  // let sw_portraits = new Swiper(".sw-pf-2", {
-  //   slidesPerView: 2,
-  //   slidesPerColumn: 3,
-  //   slidesPerColumnFill: 'row',
-  //   slidesPerGroup: 1,
-  //   spaceBetween: 30,
-    // watchOverflow : true,
-    // pagination: {
-    //   el: ".sw-portfolio-pg",
-    //   clickable: true,
-    // },
-    // breakpoints: {
-    //   1200: {
-    //     slidesPerView: 3,
-    //     slidesPerColumn: 3,
-    //     slidesPerGroup: 9,
-    //   },
-    //   800: {
-    //     slidesPerView: 2,
-    //     slidesPerColumn: 2,
-    //     slidesPerGroup: 2,
-    //   }
-    // }
-  // });
-
-
-
   // life slide  
   let sw_life_slide = $('.sw-life .swiper-slide');
-  let slideCount = sw_life_slide.length;
   let sw_life_w = $('.sw-life').width();
   $.each(sw_life_slide, function(index, item){
     $(this).find('.life-box').mouseenter(function(){
       sw_life_w = sw_life.width;
-      if(sw_life_w >= 1024) {
+      console.log(sw_life_w);
+      if(sw_life_w >= 795) {
         perView = 6;
       } else if(sw_life_w >= 420) {
         perView = 3;
@@ -570,6 +484,8 @@ window.onload = function () {
   });
 
 
+
+
   function contact_icon_resize(){
     let win_width = window.innerWidth;
     // console.log(win_width);
@@ -591,7 +507,7 @@ window.onload = function () {
   }
 
 
-  // makeTop();
+  makeTop();
   contact_icon_resize();
 
 }

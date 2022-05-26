@@ -63,9 +63,48 @@ body {
 .title {
     position: relative;
     display: block;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 700;
+    text-align: center;
     text-transform: capitalize;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    margin: 0 3px;
+    background-color: #777;
+    opacity: 0.8;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    width: 16px;
+    background-color: #060606;
+    border-radius: 8px;
+}
+
+@media all and (max-width:1024px) {
+    .container {
+        width: 100%;        
+    }    
+}
+@media all and (max-width: 768px) {
+    .left {
+        width: calc((100% / 4) * 1);
+    }
+    .right {
+        width: calc((100% / 4) * 3);
+    }
+    .title {
+        font-size: 32px;
+    }
+}
+@media all and (max-width: 480px) {
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+        padding-top: 20px;
+    }    
 }
 
 /* //공통요소 */
@@ -133,6 +172,20 @@ body {
                         font-size: 14px;
                         line-height: 26px;
                         text-transform: capitalize;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            display: block;
+                            width: 0%;
+                            height: 1px;
+                            background-color: #060606;
+                            transition: width 0.3s;
+                        }
+                        &:hover::after {
+                            width: 100%;
+                        }
                     }
                 }
 
@@ -146,6 +199,7 @@ body {
     display: block;
 }
 
+/* 비주얼 */
 .visual {
     position: relative;
     display: block;
@@ -174,6 +228,8 @@ body {
                 display: block;
                 width: 100%;
                 padding: 10px 0;
+                overflow: hidden;
+                border-radius: 10px;
                 img {
                     width: 100%;
                 }
@@ -213,7 +269,6 @@ body {
                     display: block;
 
                     padding-top: 16px;
-                    // font-size: 14px;
                     line-height: 16px; 
                     ul {
                         position: relative;
@@ -330,6 +385,42 @@ body {
     }
 }
 
+@media all and (max-width: 768px) {
+    .visual {
+        .container {
+            align-items: flex-start;
+            .right {
+                flex-direction: column;
+                .about-box {
+                    padding-top: 15px;
+                }
+                .about-box-small {
+                    width: 100%;
+                }
+                .about-box-big {
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 480px) {
+    .visual {
+        .container {
+            .left {
+                .visual-face {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+/* //비주얼 */
+
+
+/* 포트폴리오 */
 .portraits {
     position: relative;
     display: block;
@@ -339,7 +430,6 @@ body {
         display: flex;
         justify-content: space-between;
         .left {
-    
         }
         .right {
             .sw-portraits {
@@ -363,22 +453,34 @@ body {
                 .swiper-slide {
                     display:flex;
                     flex-wrap:wrap;
-                    justify-content: center;
+                    justify-content:center;
                     .port-box {
                         position: relative;
                         display: block;
                         width: 100%;
                         background-color: #f0f0f0;
-                        padding-bottom: 14px;             
+                        padding-bottom: 20px;             
                         .port-box-img {
                             position: relative;
                             display: block;
                             height: 240px;
                             overflow: hidden;
                             img {
-                                width: 100%;
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                display: inline-block;
+                                width : 100%;
+
+                                
+                                image-rendering: -webkit-optimize-contrast;
+                                transition: all 0.3s;
+                                
+                                &:last-child {
+                                    opacity: 0;
+                                 }
                             }              
-                        }
+                        }                        
                         .port-box-title {
                             position: relative;
                             display: block;
@@ -389,18 +491,87 @@ body {
                             color: #060606;
                         }
                         .port-box-info {
-                            position: relative;
+                            position: absolute;
+                            left: 0;
+                            bottom: 5px;
                             display: block;
+                            line-height: 16px;
                             color: #777;
+                            transition: all 0.3s;
+                        }
+                        .port-box-bt {
+                            position: absolute;
+                            left: 0;
+                            bottom: 5px;
+                            display: block;
+                            overflow: hidden;
+                            visibility: hidden;
+                            opacity: 0;
+                            transition: all 0.3s;
+                            li {
+                                position: relative;
+                                display: block;
+                                float: left;
+                                margin: 0 5px;
+                                a {
+                                    display: inline-block;
+                                    line-height: 16px;
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: 0;
+                                        display: block;
+                                        width: 0%;
+                                        height: 1px;
+                                        background-color: #060606;
+                                        transition: width 0.3s;
+                                    }
+                                    &:hover::after {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .port-box-img {
+                                img {
+                                    &:last-child {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                            .port-box-info {
+                                opacity: 0;
+                            }
+                            .port-box-bt {
+                                opacity: 1;
+                                visibility: visible;
+                            }
                         }
                     }
                 }
     
             }
+            .sw-portraits-pg {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     } 
 }
+@media all and (max-width: 480px) {
+    .portraits {
+        .container {
+            flex-direction: column;
+        }
+    }
+}
+/* //포트폴리오 */
 
+
+/* 나의 소개 */
 .about {
     position: relative;
     display: block;
@@ -428,7 +599,7 @@ body {
                         position: relative;
                         display: inline-block;
                         width: 100%;
-                        height: 200px;
+                        height: 80px;
                     
                         font-size: 13px;
                         line-height: 18px;
@@ -511,50 +682,103 @@ body {
         }
     }
 }
+@media all and (max-width: 480px) {
+    .about {
+        .container {
+            flex-direction: column;
+        }
+    }
+}
+/* //나의 소개 */
 
+
+/* 삶 */
 .life {
     position: relative;
     display: block;
-    margin: 60px 0 40px;
     .container {
-        padding: 40px 0;
-        .sw-life {
-            width: 100%;
-            height: 50vw;
-            height: calc(45vw + 180px);
-            .swiper-slide {
-                height: 45vw;                
-                transition: all 0.3s;
-                
-                .life-box {
-                    position: relative;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-
+        padding: 30px 0;      
+        .left {
+            float: left;
+            
+        }
+        .right {
+            float: left;
+            .sw-life {
+                width: 100%;
+                height: calc(45vw + 180px);
+                .swiper-slide {
+                    max-height: 650px;
+                    height: 45vw;                
                     transition: all 0.3s;
                     
+                    .life-box {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+    
+                        transition: all 0.3s;                        
+                    }
                     .life-txt {
                         position: relative;
                         display: block;
                         width: 100%;
 
                         margin-top: 10px;
-                        font-size: 14px;
-                        color: #A3C0CC;
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: #777;
 
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
                     }
-                }
-                &:hover {
-                    .life-box {
-                        aspect-ratio: 1 / 1; 
+                    
+                    .sw-life-txt-active {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #060606;
                     }
+                    &:hover {
+                        .life-box {
+                            aspect-ratio: 1 / 1; 
+                        }
+                    } 
+                }
+
+                .sw-life-small-6 {
+                    width: calc((100% - 40.245% - (10px * 5)) / 5) !important;
+                }
+                
+                .sw-life-big-6 {
+                    width: 40.245% !important;
+                }
+                
+                .sw-life-small-3 {
+                    width: calc((100% - 75% - (10px * 2)) / 2) !important;
+                }
+                
+                .sw-life-big-3 {
+                    width: 75% !important;
                 }
 
                 .swiper-slide-next {
+                    .life-box {
+                        margin-top: 50px;
+                    }
+                }
+                .swiper-slide-next+.swiper-slide  {
+                    .life-box {
+                        margin-top: 100px;
+                    }
+                }
+                .swiper-slide-next+.swiper-slide+.swiper-slide  {
+                    .life-box {
+                        margin-top: 100px;
+                    }
+                }
+                .swiper-slide-next+.swiper-slide+.swiper-slide+.swiper-slide {
                     .life-box {
                         margin-top: 50px;
                     }
@@ -563,32 +787,99 @@ body {
         }
     }
 }
-.sw-life-small-6 {
-    width: calc((100% - 50% - (10px * 5)) / 5) !important;
+
+
+.life-1 {
+    background: url('../images/life_travel_004.jpg') no-repeat center;
+    background-size: cover;
 }
 
-.sw-life-big-6 {
-    width: 50% !important;
+.life-2 {
+    background: url('../images/life_travel_002.jpg') no-repeat center;
+    background-size: cover;
 }
 
-.sw-life-small-3 {
-    width: calc((100% - 75% - (10px * 2)) / 2) !important;
+.life-3 {
+    background: url('../images/life_travel_003.jpg') no-repeat center;
+    background-size: cover;
 }
 
-.sw-life-big-3 {
-    width: 75% !important;
+.life-4 {
+    background: url('../images/life_travel_005.jpg') no-repeat center;
+    background-size: cover;
 }
 
-.sw-life-txt-active {
-    font-size: 24px;
-    color: #4D7080;
+.life-5 {
+    background: url('../images/life_travel_006.jpg') no-repeat center;
+    background-size: cover;
 }
+
+.life-6 {
+    background: url('../images/life_read_004.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.life-7 {
+    background: url('../images/life_travel_001.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.life-8 {
+    background: url('../images/life_show_002.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.life-9 {
+    background: url('../images/life_show_003.png') no-repeat center;
+    background-size: cover;
+}
+.life-10 {
+    background: url('../images/life_show_004.png') no-repeat center;
+    background-size: cover;
+}
+.life-11 {
+    background: url('../images/life_show_005.png') no-repeat center;
+    background-size: cover;
+}
+.life-12 {
+    background: url('../images/life_show_006.jpg') no-repeat center;
+    background-size: cover;
+}
+
+@media all and (max-width: 480px) {
+    .life {
+        .container {
+            .right {
+                .sw-life {
+                    height: calc(100vw + 80px);
+                    .swiper-slide {
+                        height: 100vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* //삶 */
 
 /* 하단 */
 .footer {
     position: relative;
     display: block;
-
+    background-color: #a5a5a5;
+    .container {
+        padding: 40px 0;
+        .copy {
+            position: relative;
+            display: block;
+        
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+        }
+    }
 }
 
 /* //하단 */

@@ -63,9 +63,50 @@ body {
 .title {
   position: relative;
   display: block;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
+  text-align: center;
   text-transform: capitalize;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  margin: 0 3px;
+  background-color: #777;
+  opacity: 0.8;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 16px;
+  background-color: #060606;
+  border-radius: 8px;
+}
+
+@media all and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .left {
+    width: calc((100% / 4) * 1);
+  }
+  .right {
+    width: calc((100% / 4) * 3);
+  }
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 
 /* //공통요소 */
@@ -145,12 +186,30 @@ body {
   text-transform: capitalize;
 }
 
+.header .container .nav .gnb li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #060606;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.header .container .nav .gnb li a:hover::after {
+  width: 100%;
+}
+
 /* //상단 */
 .main {
   position: relative;
   display: block;
 }
 
+/* 비주얼 */
 .visual {
   position: relative;
   display: block;
@@ -188,6 +247,8 @@ body {
   display: block;
   width: 100%;
   padding: 10px 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .visual .container .left .visual-face img {
@@ -356,6 +417,38 @@ body {
   width: calc((100% - (100% / 4)) / 2);
 }
 
+@media all and (max-width: 768px) {
+  .visual .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .visual .container .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .visual .container .right .about-box {
+    padding-top: 15px;
+  }
+  .visual .container .right .about-box-small {
+    width: 100%;
+  }
+  .visual .container .right .about-box-big {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .visual .container .left .visual-face {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* //비주얼 */
+/* 포트폴리오 */
 .portraits {
   position: relative;
   display: block;
@@ -411,7 +504,7 @@ body {
   display: block;
   width: 100%;
   background-color: #f0f0f0;
-  padding-bottom: 14px;
+  padding-bottom: 20px;
 }
 
 .portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-img {
@@ -422,7 +515,19 @@ body {
 }
 
 .portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-img img {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: inline-block;
   width: 100%;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-img img:last-child {
+  opacity: 0;
 }
 
 .portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-title {
@@ -435,11 +540,87 @@ body {
 }
 
 .portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-info {
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
   display: block;
+  line-height: 16px;
   color: #777;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
+.portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-bt {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-bt li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0 5px;
+}
+
+.portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-bt li a {
+  display: inline-block;
+  line-height: 16px;
+}
+
+.portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-bt li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #060606;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.portraits .container .right .sw-portraits .swiper-slide .port-box .port-box-bt li a:hover::after {
+  width: 100%;
+}
+
+.portraits .container .right .sw-portraits .swiper-slide .port-box:hover .port-box-img img:last-child {
+  opacity: 1;
+}
+
+.portraits .container .right .sw-portraits .swiper-slide .port-box:hover .port-box-info {
+  opacity: 0;
+}
+
+.portraits .container .right .sw-portraits .swiper-slide .port-box:hover .port-box-bt {
+  opacity: 1;
+  visibility: visible;
+}
+
+.portraits .container .right .sw-portraits-pg {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media all and (max-width: 480px) {
+  .portraits .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* //포트폴리오 */
+/* 나의 소개 */
 .about {
   position: relative;
   display: block;
@@ -477,7 +658,7 @@ body {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 200px;
+  height: 80px;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.02rem;
@@ -552,29 +733,47 @@ body {
   margin-top: 2vw;
 }
 
+@media all and (max-width: 480px) {
+  .about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* //나의 소개 */
+/* 삶 */
 .life {
   position: relative;
   display: block;
-  margin: 60px 0 40px;
 }
 
 .life .container {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
-.life .container .sw-life {
+.life .container .left {
+  float: left;
+}
+
+.life .container .right {
+  float: left;
+}
+
+.life .container .right .sw-life {
   width: 100%;
-  height: 50vw;
   height: calc(45vw + 180px);
 }
 
-.life .container .sw-life .swiper-slide {
+.life .container .right .sw-life .swiper-slide {
+  max-height: 650px;
   height: 45vw;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.life .container .sw-life .swiper-slide .life-box {
+.life .container .right .sw-life .swiper-slide .life-box {
   position: relative;
   display: block;
   width: 100%;
@@ -583,51 +782,148 @@ body {
   transition: all 0.3s;
 }
 
-.life .container .sw-life .swiper-slide .life-box .life-txt {
+.life .container .right .sw-life .swiper-slide .life-txt {
   position: relative;
   display: block;
   width: 100%;
   margin-top: 10px;
-  font-size: 14px;
-  color: #A3C0CC;
+  font-size: 12px;
+  line-height: 20px;
+  color: #777;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.life .container .sw-life .swiper-slide:hover .life-box {
+.life .container .right .sw-life .swiper-slide .sw-life-txt-active {
+  font-size: 14px;
+  font-weight: 500;
+  color: #060606;
+}
+
+.life .container .right .sw-life .swiper-slide:hover .life-box {
   aspect-ratio: 1 / 1;
 }
 
-.life .container .sw-life .swiper-slide .swiper-slide-next .life-box {
-  margin-top: 50px;
+.life .container .right .sw-life .sw-life-small-6 {
+  width: calc((100% - 40.245% - (10px * 5)) / 5) !important;
 }
 
-.sw-life-small-6 {
-  width: calc((100% - 50% - (10px * 5)) / 5) !important;
+.life .container .right .sw-life .sw-life-big-6 {
+  width: 40.245% !important;
 }
 
-.sw-life-big-6 {
-  width: 50% !important;
-}
-
-.sw-life-small-3 {
+.life .container .right .sw-life .sw-life-small-3 {
   width: calc((100% - 75% - (10px * 2)) / 2) !important;
 }
 
-.sw-life-big-3 {
+.life .container .right .sw-life .sw-life-big-3 {
   width: 75% !important;
 }
 
-.sw-life-txt-active {
-  font-size: 24px;
-  color: #4D7080;
+.life .container .right .sw-life .swiper-slide-next .life-box {
+  margin-top: 50px;
 }
 
+.life .container .right .sw-life .swiper-slide-next + .swiper-slide .life-box {
+  margin-top: 100px;
+}
+
+.life .container .right .sw-life .swiper-slide-next + .swiper-slide + .swiper-slide .life-box {
+  margin-top: 100px;
+}
+
+.life .container .right .sw-life .swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide .life-box {
+  margin-top: 50px;
+}
+
+.life-1 {
+  background: url("../images/life_travel_004.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.life-2 {
+  background: url("../images/life_travel_002.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.life-3 {
+  background: url("../images/life_travel_003.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.life-4 {
+  background: url("../images/life_travel_005.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.life-5 {
+  background: url("../images/life_travel_006.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.life-6 {
+  background: url("../images/life_read_004.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.life-7 {
+  background: url("../images/life_travel_001.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.life-8 {
+  background: url("../images/life_show_002.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.life-9 {
+  background: url("../images/life_show_003.png") no-repeat center;
+  background-size: cover;
+}
+
+.life-10 {
+  background: url("../images/life_show_004.png") no-repeat center;
+  background-size: cover;
+}
+
+.life-11 {
+  background: url("../images/life_show_005.png") no-repeat center;
+  background-size: cover;
+}
+
+.life-12 {
+  background: url("../images/life_show_006.jpg") no-repeat center;
+  background-size: cover;
+}
+
+@media all and (max-width: 480px) {
+  .life .container .right .sw-life {
+    height: calc(100vw + 80px);
+  }
+  .life .container .right .sw-life .swiper-slide {
+    height: 100vw;
+  }
+}
+
+/* //삶 */
 /* 하단 */
 .footer {
   position: relative;
   display: block;
+  background-color: #a5a5a5;
+}
+
+.footer .container {
+  padding: 40px 0;
+}
+
+.footer .container .copy {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
 }
 
 /* //하단 */
