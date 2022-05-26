@@ -338,7 +338,7 @@ window.onload = function () {
 
     sw_port_html += `<span class="port-box-title">${temp_data.name}</span>`;
     
-    sw_port_html += `<span class="port-box-info"><em>${temp_data.day}</em><i>${temp_data.study}</i> 제작</span>`;
+    sw_port_html += `<span class="port-box-info"><em>${temp_data.day}</em>일 <i>${temp_data.study}</i> 제작</span>`;
 
     sw_port_html += '</div></div>';
   }

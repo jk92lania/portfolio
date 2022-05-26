@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -44,26 +44,26 @@ body {
 .container {
   position: relative;
   display: block;
-  width: 768px;
+  width: 1024px;
   margin: 0 auto;
 }
 
 .left {
   position: relative;
   display: block;
-  width: calc(100% / 4);
+  width: calc((100% / 9) * 2);
 }
 
 .right {
   position: relative;
   display: block;
-  width: calc((100% / 4) * 3);
+  width: calc((100% / 9) * 7);
 }
 
 .title {
   position: relative;
   display: block;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -140,8 +140,9 @@ body {
 .header .container .nav .gnb li a {
   position: relative;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
+  text-transform: capitalize;
 }
 
 /* //상단 */
@@ -214,7 +215,7 @@ body {
 .visual .container .right .about-box h2 {
   position: relative;
   display: block;
-  font-size: 28px;
+  font-size: 20px;
   color: #060606;
   font-weight: 700;
   letter-spacing: 1rem;
@@ -223,7 +224,7 @@ body {
 .visual .container .right .about-box h2 em {
   position: relative;
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 28px;
   letter-spacing: 0.005rem;
   text-transform: uppercase;
@@ -233,14 +234,46 @@ body {
   position: relative;
   display: block;
   padding-top: 16px;
-  font-size: 14px;
-  line-height: 22px;
+  line-height: 16px;
+}
+
+.visual .container .right .about-box .about-info ul {
+  position: relative;
+  display: block;
+}
+
+.visual .container .right .about-box .about-info ul li {
+  position: relative;
+  display: block;
+  margin: 3px 0;
+}
+
+.visual .container .right .about-box .about-info ul li a {
+  position: relative;
+  display: inline-block;
+}
+
+.visual .container .right .about-box .about-info ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: #060606;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.visual .container .right .about-box .about-info ul li a:hover::after {
+  width: 100%;
 }
 
 .visual .container .right .about-box h3 {
   position: relative;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #777;
   line-height: 24px;
@@ -305,14 +338,22 @@ body {
   display: block;
   width: calc(100% - 50px);
   text-align: left;
-  font-size: 16px;
+  font-size: 13px;
   word-break: keep-all;
 }
 
 .visual .container .right .about-box .about-profile .profile-list li span:first-child {
   width: 50px;
-  font-size: 12px;
+  font-size: 10px;
   color: #777;
+}
+
+.visual .container .right .about-box-small {
+  width: calc(100% / 4);
+}
+
+.visual .container .right .about-box-big {
+  width: calc((100% - (100% / 4)) / 2);
 }
 
 .portraits {
@@ -341,8 +382,13 @@ body {
 }
 
 .portraits .container .right .sw-portraits .list {
-  width: calc((100% - 4vw) / 2);
-  padding: 1vw;
+  width: calc((100% - 1vw) / 2);
+  padding-right: 1vw;
+  padding-bottom: 2vw;
+}
+
+.portraits .container .right .sw-portraits .list:nth-child(2x) {
+  padding-right: 0;
 }
 
 .portraits .container .right .sw-portraits .portraits-list-1 {
