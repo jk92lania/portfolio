@@ -65,6 +65,7 @@
     <script src="js/script.js"></script>
 </head>
 <body>
+    <button class="gotop">top</button>
     <div class="wrap" id="wrap">
         <!-- 상단 -->
         <header class="header">
@@ -74,7 +75,7 @@
                 </a>
                 <nav class="nav clearfix">                    
                     <ul class="gnb clearfix">
-                        <li><a href="#">portraits</a></li>
+                        <li><a href="#">portfolio</a></li>
                         <li><a href="#">about</a></li>
                         <li><a href="#">life</a></li>
                     </ul>
@@ -88,7 +89,7 @@
             <!-- 비주얼 -->
             <section class="visual">
                 <div class="container">
-                    <h1>front-end <strong>dev</strong></h1>
+                    <h1>front-end <strong>dev</strong> <i>v1.0</i></h1>
                     <div class="left">
                         <div class="visual-face">
                             <img src="images/about_009.png" alt="박주경">
@@ -96,12 +97,12 @@
                         </div>
                     </div>
                     <div class="right">
-                        <div class="about-box about-box-small">
+                        <div class="intro-box intro-box-small">
                             <h2>
                                 박주경
                                 <em>JU KYEONG PARK</em>
                             </h2>
-                            <div class="about-info">
+                            <div class="intro-info">
                                 <ul>
                                     <li>
                                         <span>1992 대구</span>
@@ -118,52 +119,64 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="about-box about-box-big">
+                        <div class="intro-box intro-box-big">
                             <h3>skill</h3>
-                            <div class="about-skill">
+                            <div class="intro-skill">
                                 <ul class="skill-list clearfix">
                                     <li>
-                                        <img src="images/skill_html.png" alt="html">
+                                        <img src="images/icon-html-5.png" alt="html">
                                         html
                                     </li>
                                     <li>
-                                        <img src="images/skill_css.png" alt="css">
+                                        <img src="images/icon-css-3.png" alt="css">
                                         css
                                     </li>
                                     <li>
-                                        <img src="images/skill_js.png" alt="js">
+                                        <img src="images/icon-js.png" alt="js">
                                         js
                                     </li>
                                     <li>
-                                        <img src="images/skill_jquery.png" alt="jquery">
+                                        <img src="images/icon-jquery.png" alt="jquery">
                                         jquery
                                     </li>
                                     <li>
-                                        <img src="images/skill_scss.png" alt="scss">
+                                        <img src="images/icon-sass.png" alt="scss">
                                         scss
                                     </li>
                                     <li>
-                                        <img src="images/skill_vue.png" alt="vue">
+                                        <img src="images/icon-vue.png" alt="vue">
                                         vue
                                     </li>
                                     <li>
-                                        <img src="images/skill_vs.png" alt="visualstudio">
+                                        <img src="images/icon-visual-studio.png" alt="visualstudio">
                                         visualstudio
                                     </li>
                                     <li>
-                                        <img src="images/skill_git.png" alt="github">
+                                        <img src="images/icon-github.png" alt="github">
                                         github
+                                    </li>
+                                    <li>
+                                        <img src="images/icon-bootstrap.png" alt="bootstrap">
+                                        bootstrap
+                                    </li>
+                                    <li>
+                                        <img src="images/icon-mariadb.png" alt="mariadb">
+                                        mariadb
+                                    </li>
+                                    <li>
+                                        <img src="images/icon-gnu.png" alt="gnuboard">
+                                        gnuboard
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="about-box about-box-big">                            
+                        <div class="intro-box intro-box-big">                            
                             <h3>experience</h3>                            
-                            <div class="about-profile">
+                            <div class="intro-profile">
                                 <ul class="profile-list">
                                     <li>
                                         <span>2021.12</span>
-                                        <span>그린컴퓨터아트 학원 PWA-B 수강</span>
+                                        <span>그린컴퓨터아트 학원 PWA 수강</span>
                                     </li>
                                     <li>
                                         <span>2020.08</span>
@@ -192,13 +205,13 @@
             
             
             <!-- 포트폴리오 -->
-            <section class="portraits">
+            <section class="portfolio">
                 <div class="container">
                     <div class="left">
-                        <h2 class="title">portraits</h2>
+                        <h2 class="title">portfolio</h2>
                     </div>
                     <div class="right">
-                        <div class="swiper-container sw-portraits">
+                        <div class="swiper-container sw-portfolio">
                             <div class="inner">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -209,7 +222,7 @@
                                             </div>
                                             <span class="port-box-title">팔공티</span>
                                             <span class="port-box-info"><em>8일</em><i>개인</i>제작</span>
-                                            <div class="port-box-bt">
+                                            <div class="port-box-btn">
                                                 <ul>
                                                     <li><a href="#">work</a></li>
                                                     <li><button>git</button></li>
@@ -226,7 +239,7 @@
                                             </div>
                                             <span class="port-box-title">삼양맛샵</span>
                                             <span class="port-box-info"><em>8일</em><i>개인</i>제작</span>
-                                            <div class="port-box-bt">
+                                            <div class="port-box-btn">
                                                 <ul>
                                                     <li><button>work</button></li>
                                                     <li><button>git</button></li>
@@ -239,7 +252,7 @@
                             </div>
                             
                         </div>
-                        <div class="swiper-pagination sw-portraits-pg"></div>
+                        <div class="swiper-pagination sw-portfolio-pg"></div>
                     </div>
                 </div>
             </section>
@@ -270,8 +283,8 @@
                                     </div>
                                     <div class="about-info">                                
                                         <span>
-                                            해보지 않고는 무엇을 해낼 수 있는지 알 수 없습니다.
-                                            멀리 갈 위험을 감수한 자만이 얼마나 멀리 갈 수 있는지 알 수 있습니다.
+                                            해보지 않고는 <i>무엇</i>을 해낼 수 있는지 알 수 없습니다.
+                                            멀리 갈 위험을 감수한 자만이 <i>얼마나 멀리</i> 갈 수 있는지 알 수 있습니다.
                                             
                                         </span>                                        
                                     </div>
@@ -283,7 +296,7 @@
                                     <div class="about-info">                                
                                         
                                         <span>
-                                            이와 같이 할 수 있다고 생각하면 성취할 수 있습니다.
+                                            이와 같이 할 수 있다고 생각하면 <i>성취</i>할 수 있습니다.
                                             하지만 안 된다고 생각하면 아무 것도 이뤄지지 않습니다.
                                             이는 불변의 법칙입니다.
                                         </span>
@@ -296,8 +309,8 @@
                                     <div class="about-info">                                
                                         
                                         <span>
-                                            성공은 꿈꾸고 믿고 대담하게 실천함으로써 옵니다.
-                                            언젠가 재능이 피는 그 날까지 저는 지지 않습니다.
+                                            성공은 <i>꿈</i>꾸고 믿고 <i>대담</i>하게 <i>실천</i>함으로써 옵니다.
+                                            언젠가 재능이 피는 그 날까지 저는 <i>지지 않습니다.</i>
                                         </span>
                 
                                     </div>
@@ -305,7 +318,8 @@
                                 </div>                                    
                                 
                             </div>
-                        </div> 
+                            <div class="swiper-pagination sw-about-pg"></div>
+                        </div>
                     </div>               
                     
                 </div>                
@@ -327,51 +341,51 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="life-box life-1"></div>
-                                    <span class="life-txt">April, 화창한 날 화려하게 핀</span>
+                                    <span class="life-txt"><i>April</i>, 화창한 날 화려하게 핀</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-2"></div>
-                                    <span class="life-txt">April, 경주의 아름다운 밤을 만나다</span>
+                                    <span class="life-txt"><i>April</i>, 경주의 아름다운 밤을 만나다</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-3"></div>
-                                    <span class="life-txt">August, 파리에서 밤</span>
+                                    <span class="life-txt"><i>August</i>, 파리에서 밤</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-4"></div>
-                                    <span class="life-txt">August, 역사책에서만 본 콜로세움을 직접 보다</span>
+                                    <span class="life-txt"><i>August</i>, 역사책에서만 본 콜로세움을 직접 보다</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-5"></div>
-                                    <span class="life-txt">August, 이탈리아 현지에서만 볼 수 있는 아름다움을 만나다</span>
+                                    <span class="life-txt"><i>August</i>, 이탈리아 현지에서만 볼 수 있는 아름다움을 만나다</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-6"></div>
-                                    <span class="life-txt">January, 아름다운 일러스트 모음집</span>
+                                    <span class="life-txt"><i>January</i>, 아름다운 일러스트 모음집</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-7"></div>
-                                    <span class="life-txt">April, 청도 벚꽃터널을 지나며</span>
+                                    <span class="life-txt"><i>April</i>, 청도 벚꽃터널을 지나며</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-8"></div>
-                                    <span class="life-txt">October, 조드윅의 귀환! 그와 만나다</span>
+                                    <span class="life-txt"><i>October</i>, 조드윅의 귀환! 그와 만나다</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-9"></div>
-                                    <span class="life-txt">November, 추위를 날려버릴 뜨거운 열정을 보며</span>
+                                    <span class="life-txt"><i>November</i>, 추위를 날려버릴 뜨거운 열정을 보며</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-10"></div>
-                                    <span class="life-txt">July, 전설의 시작 싱어게인의 주인공들을 만나다</span>
+                                    <span class="life-txt"><i>July</i>, 전설의 시작 싱어게인의 주인공들을 만나다</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-11"></div>
-                                    <span class="life-txt">December, 어린 나의 풀문 이용신을 만나다</span>
+                                    <span class="life-txt"><i>December</i>, 어린 나의 풀문 이용신을 만나다</span>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="life-box life-12"></div>
-                                    <span class="life-txt">October, 오리지널 헤드윅을 만나다</span>
+                                    <span class="life-txt"><i>October</i>, 오리지널 헤드윅을 만나다</span>
                                 </div>
                             </div>
                             <div class="swiper-pagination sw-life-pg"></div>                    
@@ -387,8 +401,13 @@
         <!-- 하단 -->
         <footer class="footer">
             <div class="container">
-                <div class="copy">
-                    Copyright 2022. JuKyeong Park All Rights Reserved.
+                <div class="left">
+
+                </div>
+                <div class="right">
+                    <div class="copy">
+                        Copyright 2022. JuKyeong Park All Rights Reserved.
+                    </div>
                 </div>
             </div>
         </footer>

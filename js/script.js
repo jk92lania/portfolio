@@ -11,7 +11,7 @@ window.onload = function () {
 
 
   // 메뉴 누를시 스크롤 이동  
-  let port_top = $('.portraits').offset().top;
+  let port_top = $('.portfolio').offset().top;
   let about_top = $('.about').offset().top;
   let life_top = $('.life').offset().top;
   let gnbLink = $('.gnb li a');
@@ -26,7 +26,7 @@ window.onload = function () {
   });
   
   function makeTop() {
-    port_top = $('.portraits').offset().top;
+    port_top = $('.portfolio').offset().top;
     about_top = $('.about').offset().top;
     life_top = $('.life').offset().top;
     gnbLinkPos = [ port_top, about_top, life_top];
@@ -37,6 +37,30 @@ window.onload = function () {
     contact_icon_resize();
   });
 
+  
+  // 위로 가기
+  let gotop = $('.gotop');
+  gotop.click(function(event){
+    event.preventDefault();
+      $('html').animate({
+        scrollTop : 0
+      }, 400);
+  });
+  
+  let visual_h = $('.visual').height();
+  $(window).scroll(function () {
+    let nowTop = $(this).scrollTop();
+    if (nowTop > parseInt(visual_h)) {
+      gotop.removeClass('gotop-hide');
+    } else {
+      gotop.removeClass('gotop-hide');
+      gotop.addClass('gotop-hide');
+    }
+
+    animateNowPos(nowTop);   
+  });
+
+
 
   // about slide
   let sw_about;
@@ -45,6 +69,10 @@ window.onload = function () {
     slidesPerView: 1,
     slidesPerGroup: 1,
     spaceBetween: 30,
+    pagination: {
+      el: ".sw-about-pg",
+      clickable: true,
+    },
     breakpoints: {
       1080: {
         slidesPerView: 3,
@@ -64,7 +92,7 @@ window.onload = function () {
 
 
 
-  // portraits data
+  // portfolio data
   let sw_port_data = [{
       'name': '팔공티',
       'imgurl': 'images/port_pal_003.png',
@@ -262,15 +290,21 @@ window.onload = function () {
     sw_port_html += '<div class="list">';
     sw_port_html += '<div class="port-box">';
 
-    sw_port_html += '<div class="port-box-img">';
+    if(temp_data.work) {
+      sw_port_html += `<a href="${temp_data.work}" class="port-box-img">`;
+    } else {
+      sw_port_html += `<a href="${temp_data.git}" class="port-box-img">`;
+
+    }
+
     sw_port_html += `<img src="${temp_data.imgurlbefore}" alt="${temp_data.name}">`
     sw_port_html += `<img src="${temp_data.imgurl}" alt="${temp_data.name}">`
-    sw_port_html +='</div>';
+    sw_port_html +='</a>';
 
     sw_port_html += `<span class="port-box-title">${temp_data.name}</span>`;
     
     sw_port_html += `<span class="port-box-info"><em>${temp_data.day}</em>일 <i>${temp_data.study}</i> 제작</span>`;
-    sw_port_html += '<div class="port-box-bt"><ul>';
+    sw_port_html += '<div class="port-box-btn"><ul>';
     if(temp_data.work) {
       sw_port_html += `<li><a href="${temp_data.work}">work</a></li>`;
     }
@@ -284,7 +318,7 @@ window.onload = function () {
     sw_port_html += '</ul></div>';
     sw_port_html += '</div></div>';
   }
-  let sw_port_wrapper = $('.sw-portraits .swiper-wrapper');
+  let sw_port_wrapper = $('.sw-portfolio .swiper-wrapper');
   sw_port_wrapper.html(sw_port_html);
   slideAct();
 
@@ -295,7 +329,7 @@ window.onload = function () {
     let swiperArr = []; //슬라이드 배열
     
     //슬라이드 배열 생성
-    $(".sw-portraits").each(function(){
+    $(".sw-portfolio").each(function(){
         realInx.push(0);
         swiperArr.push(undefined);
     })
@@ -320,38 +354,38 @@ window.onload = function () {
       slideList();
       function slideList(){
           //리스트 초기화
-          $('.sw-portraits .list').removeClass('portraits-list-1');
-          if ($('.sw-portraits .list').parent().hasClass('swiper-slide')){
+          $('.sw-portfolio .list').removeClass('portfolio-list-1');
+          if ($('.sw-portfolio .list').parent().hasClass('swiper-slide')){
             console.log('e');
-              $('.sw-portraits .swiper-slide-duplicate').remove();
-              $('.sw-portraits .list').unwrap('.swiper-slide');
+              $('.sw-portfolio .swiper-slide-duplicate').remove();
+              $('.sw-portfolio .list').unwrap('.swiper-slide');
           }
           
           //보이는 슬라이드 개수 설정
-          $(".sw-portraits").each(function(index){
+          $(".sw-portfolio").each(function(index){
             console.log("innerWidth : " + window.innerWidth);
               if (window.innerWidth > 1200){ //PC 버전
-                  view = 8;
-              }else if(window.innerWidth > 480){ //pad 버전
                   view = 6;
+              }else if(window.innerWidth > 480){ //pad 버전
+                  view = 4;
               }else{ //mobile 버전
-                  view = 2;
+                  view = 1;
               }
               
-              if(view == 2) {
-                $('.sw-portraits .list').addClass('portraits-list-1');
+              if(view == 1) {
+                $('.sw-portfolio .list').addClass('portfolio-list-1');
               } 
 
               //리스트 그룹 생성 (swiper-slide element 추가)
               var num = 0;
-              $(this).addClass("sw-portraits-" + index);
-              $(".sw-portraits-" + index).find('.list').each(function(i) {
+              $(this).addClass("sw-portfolio-" + index);
+              $(".sw-portfolio-" + index).find('.list').each(function(i) {
                   $(this).addClass("list"+(Math.floor((i+view)/view)));
                   num = Math.floor((i+view)/view);
               }).promise().done(function(){
                   for (var i = 1; i < num+1; i++) {
-                      $(".sw-portraits-" + index).find('.list'+i+'').wrapAll('<div class="swiper-slide"></div>');
-                      $(".sw-portraits-" + index).find('.list'+i+'').removeClass('list'+i+'');
+                      $(".sw-portfolio-" + index).find('.list'+i+'').wrapAll('<div class="swiper-slide"></div>');
+                      $(".sw-portfolio-" + index).find('.list'+i+'').removeClass('list'+i+'');
                   }
               });
           }).promise().done(function(){
@@ -360,7 +394,7 @@ window.onload = function () {
       }
       
       function sliderStart(){
-          $(".sw-portraits").each(function(index){
+          $(".sw-portfolio").each(function(index){
               //슬라이드 초기화
               if(swiperArr[index] != undefined) {
                   swiperArr[index].destroy();
@@ -368,17 +402,17 @@ window.onload = function () {
               }
 
               //슬라이드 실행
-              swiperArr[index] = new Swiper('.sw-portraits-' + index + ' .inner', {
+              swiperArr[index] = new Swiper('.sw-portfolio-' + index + ' .inner', {
                   slidesPerView: 1,
                   initialSlide :Math.floor(realInx[index]/view),
                   resistanceRatio : 0,
                   loop:true,
                   // navigation: {
-                  //     nextEl: $('.sw-portraits-' + index).find('.sw-portfolio-next'),
-                  //     prevEl: $('.sw-portraits-' + index).find('.sw-portfolio-prev'),
+                  //     nextEl: $('.sw-portfolio-' + index).find('.sw-portfolio-next'),
+                  //     prevEl: $('.sw-portfolio-' + index).find('.sw-portfolio-prev'),
                   // },
                   pagination: {
-                    el: ".sw-portraits-pg",
+                    el: ".sw-portfolio-pg",
                     clickable: true,
                   },
                   on: {
