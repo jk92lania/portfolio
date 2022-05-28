@@ -62,7 +62,9 @@ body {
 }
 
 .title {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
   display: block;
   font-size: 28px;
   font-weight: 700;
@@ -86,6 +88,10 @@ body {
 @media all and (max-width: 1024px) {
   .container {
     width: 100%;
+  }
+  .title {
+    position: relative;
+    top: auto;
   }
 }
 
@@ -839,14 +845,12 @@ body {
 
 .life .container {
   padding: 135px 0;
-}
-
-.life .container .left {
-  float: left;
-}
-
-.life .container .right {
-  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .life .container .right .sw-life {
