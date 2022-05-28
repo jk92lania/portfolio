@@ -998,6 +998,12 @@ body {
 }
 
 @media all and (max-width: 480px) {
+  .life .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .life .container .right .sw-life {
     height: calc(100vw + 150px);
   }
