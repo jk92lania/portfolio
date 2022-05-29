@@ -62,8 +62,9 @@ body {
 }
 
 .title {
-    position: sticky;
-    top: 30px;
+    // position: sticky;
+    // top: 50px;
+    position: relative;
     display: block;
     font-size: 28px;
     font-weight: 700;
@@ -658,7 +659,7 @@ body {
                     .about-face {
                         position: relative;
                         display: block;
-                        width: 80%;
+                        width: 94%;
                         font-size: 0;
                         padding-bottom: 80%;
                         margin: 0 auto;
@@ -740,8 +741,8 @@ body {
                 }
                 .swiper-slide-next  {
                     .about-face {
-                        margin-top: 4vw;
-                        margin-left: -3vw;
+                        margin-top: 6vw;
+                        margin-left: -2vw;
                         text-align: left;
                         width: 116%;
                         padding-bottom: 116%;
@@ -749,7 +750,7 @@ body {
                     }
 
                     .about-info {
-                        margin-left: -3vw;
+                        margin-left: -2vw;
                     }
                 }
                 .swiper-slide-next+.swiper-slide  {

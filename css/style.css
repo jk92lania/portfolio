@@ -62,9 +62,7 @@ body {
 }
 
 .title {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 30px;
+  position: relative;
   display: block;
   font-size: 28px;
   font-weight: 700;
@@ -718,7 +716,7 @@ body {
 .about .container .right .sw-about .swiper-slide .about-face {
   position: relative;
   display: block;
-  width: 80%;
+  width: 94%;
   font-size: 0;
   padding-bottom: 80%;
   margin: 0 auto;
@@ -795,8 +793,8 @@ body {
 }
 
 .about .container .right .sw-about .swiper-slide-next .about-face {
-  margin-top: 4vw;
-  margin-left: -3vw;
+  margin-top: 6vw;
+  margin-left: -2vw;
   text-align: left;
   width: 116%;
   padding-bottom: 116%;
@@ -804,7 +802,7 @@ body {
 }
 
 .about .container .right .sw-about .swiper-slide-next .about-info {
-  margin-left: -3vw;
+  margin-left: -2vw;
 }
 
 .about .container .right .sw-about .swiper-slide-next + .swiper-slide .about-face {
