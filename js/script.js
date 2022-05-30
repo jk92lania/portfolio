@@ -485,7 +485,7 @@ window.onload = function () {
   let nowSlide = 0;
   let perView = 6;
   let sw_life = new Swiper(".sw-life", {
-    // loop : true,
+    loop : true,
     slidesPerView: 1,
     initialSlide : nowSlide,
     // slidesPerGroup: 3,
