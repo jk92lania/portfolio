@@ -407,10 +407,10 @@ window.onload = function () {
                   initialSlide :Math.floor(realInx[index]/view),
                   resistanceRatio : 0,
                   loop:true,
-                  // navigation: {
-                  //     nextEl: $('.sw-portfolio-' + index).find('.sw-portfolio-next'),
-                  //     prevEl: $('.sw-portfolio-' + index).find('.sw-portfolio-prev'),
-                  // },
+                  navigation: {
+                      nextEl: $('.sw-portfolio-' + index).find('.sw-portfolio-next'),
+                      prevEl: $('.sw-portfolio-' + index).find('.sw-portfolio-prev'),
+                  },
                   pagination: {
                     el: ".sw-portfolio-pg",
                     clickable: true,

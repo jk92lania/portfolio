@@ -64,6 +64,7 @@ body {
 .title {
   position: relative;
   display: block;
+  color: #00ADB5;
   font-size: 28px;
   font-weight: 700;
   text-align: center;
@@ -73,13 +74,13 @@ body {
 
 .swiper-pagination .swiper-pagination-bullet {
   margin: 0 3px;
-  background-color: #777;
+  background-color: #393E46;
   opacity: 0.8;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
   width: 16px;
-  background-color: #060606;
+  background-color: #00ADB5;
   border-radius: 8px;
 }
 
@@ -145,7 +146,7 @@ body {
 .wrap {
   position: relative;
   display: block;
-  background-color: #e9e9e9;
+  background-color: #eeeeee;
 }
 
 /* 상단 */
@@ -208,7 +209,7 @@ body {
 }
 
 .header .container .nav .gnb li a:hover {
-  color: #000;
+  color: #222831;
 }
 
 .header .container .nav .gnb li a::after {
@@ -219,7 +220,7 @@ body {
   display: block;
   width: 0%;
   height: 1px;
-  background-color: #060606;
+  background-color: #222831;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
@@ -302,7 +303,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 61px;
   line-height: 66px;
-  color: #060606;
+  color: #222831;
   padding-bottom: 40px;
   font-weight: 200;
   font-style: italic;
@@ -321,7 +322,7 @@ body {
 .visual .container .frontend .frontend-txt h1 i {
   font-size: 40px;
   font-weight: 400;
-  color: #060606;
+  color: #222831;
 }
 
 .visual .container .frontend .frontend-face {
@@ -441,7 +442,7 @@ body {
   position: relative;
   display: block;
   font-size: 20px;
-  color: #060606;
+  color: #222831;
   font-weight: 700;
   letter-spacing: 1rem;
 }
@@ -486,7 +487,7 @@ body {
   display: block;
   width: 0;
   height: 1px;
-  background-color: #060606;
+  background-color: #222831;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -500,7 +501,7 @@ body {
   display: block;
   font-size: 14px;
   font-weight: 700;
-  color: #777;
+  color: #393E46;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -570,7 +571,7 @@ body {
 .visual .container .right .intro-box .intro-profile .profile-list li span:first-child {
   width: 50px;
   font-size: 10px;
-  color: #777;
+  color: #393E46;
 }
 
 .visual .container .right .intro-box-small {
@@ -709,7 +710,7 @@ body {
   background-color: transparent;
   font-size: 14px;
   line-height: 24px;
-  color: #060606;
+  color: #222831;
 }
 
 .portfolio .container .right .sw-portfolio .swiper-slide .port-box .port-box-info {
@@ -718,7 +719,7 @@ body {
   bottom: 5px;
   display: block;
   line-height: 16px;
-  color: #777;
+  color: #393E46;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -752,7 +753,7 @@ body {
 }
 
 .portfolio .container .right .sw-portfolio .swiper-slide .port-box .port-box-btn li a:hover {
-  color: #000;
+  color: #222831;
 }
 
 .portfolio .container .right .sw-portfolio .swiper-slide .port-box .port-box-btn li a::after {
@@ -763,7 +764,7 @@ body {
   display: block;
   width: 0%;
   height: 1px;
-  background-color: #060606;
+  background-color: #222831;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
 }
@@ -788,6 +789,14 @@ body {
 .portfolio .container .right .sw-portfolio .swiper-slide .port-box:hover .port-box-btn {
   opacity: 1;
   visibility: visible;
+}
+
+.portfolio .container .right .sw-portfolio-prev::after {
+  color: #222831;
+}
+
+.portfolio .container .right .sw-portfolio-next::after {
+  color: #222831;
 }
 
 .portfolio .container .right .sw-portfolio-pg {
@@ -854,7 +863,7 @@ body {
   font-family: 'Nanum Gothic Coding', monospace;
   line-height: 18px;
   letter-spacing: -0.02rem;
-  color: #333;
+  color: #393E46;
   word-break: keep-all;
   margin-top: 1vw;
   padding: 0 0.6vw;
@@ -863,7 +872,7 @@ body {
 
 .about .container .right .sw-about .swiper-slide .about-info strong {
   width: 100%;
-  color: #060606;
+  color: #222831;
   font-weight: 800;
   font-size: 24px;
   font-weight: 700;
@@ -881,7 +890,7 @@ body {
 }
 
 .about .container .right .sw-about .swiper-slide .about-info span i {
-  color: #060606;
+  color: #222831;
   font-weight: 700;
 }
 
@@ -1141,7 +1150,7 @@ body {
 .footer {
   position: relative;
   display: block;
-  background-color: #a5a5a5;
+  background-color: #00ADB5;
 }
 
 .footer .container {

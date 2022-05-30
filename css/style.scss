@@ -66,6 +66,7 @@ body {
     // top: 50px;
     position: relative;
     display: block;
+    color: #00ADB5;
     font-size: 28px;
     font-weight: 700;
     text-align: center;
@@ -77,13 +78,13 @@ body {
 
 .swiper-pagination .swiper-pagination-bullet {
     margin: 0 3px;
-    background-color: #777;
+    background-color: #393E46;
     opacity: 0.8;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
     width: 16px;
-    background-color: #060606;
+    background-color: #00ADB5;
     border-radius: 8px;
 }
 
@@ -147,7 +148,7 @@ body {
 .wrap {
     position: relative;
     display: block;
-    background-color: #e9e9e9;
+    background-color: #eeeeee;
 }
 
 
@@ -198,7 +199,7 @@ body {
 
                         transition: all 0.5s;
                         &:hover {
-                            color: #000;
+                            color: #222831;
                         }
                         &::after {
                             content: '';
@@ -208,7 +209,7 @@ body {
                             display: block;
                             width: 0%;
                             height: 1px;
-                            background-color: #060606;
+                            background-color: #222831;
                             transition: width 0.3s;
                         }
                         &:hover::after {
@@ -283,7 +284,7 @@ body {
                     font-family: 'Ubuntu', sans-serif;
                     font-size: 61px;
                     line-height: 66px;
-                    color: #060606;
+                    color: #222831;
                     padding-bottom: 40px;
                     font-weight: 200;
                     font-style: italic;
@@ -300,7 +301,7 @@ body {
                     i {
                         font-size: 40px;
                         font-weight: 400;
-                        color: #060606;
+                        color: #222831;
                     }
                 }
             }
@@ -405,7 +406,7 @@ body {
                     display: block;
                     
                     font-size: 20px;
-                    color: #060606;
+                    color: #222831;
                     font-weight: 700;
                     letter-spacing: 1rem;
                     em {
@@ -442,7 +443,7 @@ body {
                                     display: block;
                                     width: 0;
                                     height: 1px;
-                                    background-color: #060606;
+                                    background-color: #222831;
 
                                     transition: all 0.3s;
                                 }
@@ -459,7 +460,7 @@ body {
                     display: block;
                     font-size: 14px;
                     font-weight: 700;
-                    color: #777;
+                    color: #393E46;
                     line-height: 24px;
                     text-transform: uppercase;
                 }
@@ -519,7 +520,7 @@ body {
                                 &:first-child {
                                     width: 50px;
                                     font-size: 10px;
-                                    color: #777;
+                                    color: #393E46;
                                 }
                             }
                         }
@@ -649,7 +650,7 @@ body {
                             font-size: 14px;
                             line-height: 24px;
 
-                            color: #060606;
+                            color: #222831;
                             
                         }
                         .port-box-info {
@@ -658,7 +659,7 @@ body {
                             bottom: 5px;
                             display: block;
                             line-height: 16px;
-                            color: #777;
+                            color: #393E46;
                             transition: all 0.3s;
                         }
                         .port-box-btn {
@@ -683,7 +684,7 @@ body {
                                     transition: color 0.3s;
 
                                     &:hover {
-                                        color: #000;
+                                        color: #222831;
                                     }
                                     &::after {
                                         content: '';
@@ -693,7 +694,7 @@ body {
                                         display: block;
                                         width: 0%;
                                         height: 1px;
-                                        background-color: #060606;
+                                        background-color: #222831;
                                         transition: width 0.3s;
                                     }
                                     &:hover::after {
@@ -723,6 +724,17 @@ body {
                     }
                 }
     
+            }
+            .sw-portfolio-prev {
+                &::after {
+                    color: #222831;
+                }
+            }
+            .sw-portfolio-next {
+                &::after {
+                    color: #222831;
+                }
+
             }
             .sw-portfolio-pg {
                 bottom: 10px;
@@ -782,7 +794,7 @@ body {
                         font-family: 'Nanum Gothic Coding', monospace;
                         line-height: 18px;
                         letter-spacing: -0.02rem;
-                        color: #333;
+                        color: #393E46;
                         word-break: keep-all;
                         margin-top: 1vw;
                         padding: 0 0.6vw;
@@ -792,7 +804,7 @@ body {
                         strong {
                             width: 100%;
                             
-                            color: #060606;
+                            color: #222831;
                             font-weight: 800;
                             font-size: 24px;
                             font-weight: 700;
@@ -809,7 +821,7 @@ body {
                             text-align: justify;
                             
                             i {
-                                color: #060606;
+                                color: #222831;
                                 font-weight: 700;                             
                             }
                         }
@@ -1089,7 +1101,7 @@ body {
 .footer {
     position: relative;
     display: block;
-    background-color: #a5a5a5;
+    background-color: #00ADB5;
     .container {
         padding: 40px 0;
         display: flex;
