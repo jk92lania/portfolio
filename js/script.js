@@ -248,7 +248,7 @@ window.onload = function () {
       'imgurlbefore': 'images/port_vue_004.png',
       'vue': 'vue',
       'pc': 'PC',
-      'work': 'http://paragon.dothome.co.kr/list',
+      'work': 'http://paragon.dothome.co.kr/',
       'git': 'https://github.com/jk92lania/todo-vue-php',
       'study': '스터디용',
       'day': '10',

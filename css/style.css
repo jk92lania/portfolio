@@ -923,7 +923,7 @@ body {
 
 @media all and (max-width: 1024px) {
   .branding .container .right .branding-wrap .branding-wrap-top .branding-moon {
-    padding-top: 40%;
+    padding: 40% 5.8% 0;
   }
   .branding .container .right .branding-wrap .branding-wrap-top .branding-plus {
     padding: 0 4%;
