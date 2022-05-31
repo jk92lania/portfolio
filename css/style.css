@@ -255,349 +255,6 @@ body {
   display: block;
 }
 
-/* 브렌딩 */
-.branding .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 80px;
-}
-
-.branding .container .right .branding-wrap {
-  position: relative;
-  display: block;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-top {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 30px;
-  font-weight: 700;
-  color: #222831;
-  padding: 0 20%;
-  text-transform: uppercase;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-top .branding-moon {
-  position: relative;
-  display: block;
-  font-size: 12px;
-  color: #222831;
-  padding: 24% 5.4% 0;
-  text-align: center;
-  background: url("../images/branding_01.png") no-repeat center;
-  background-size: contain;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-top .branding-moon:hover {
-  color: #00ADB5;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-top .branding-plus {
-  position: relative;
-  display: block;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-top .branding-j {
-  position: relative;
-  display: block;
-  font-size: 12px;
-  color: #222831;
-  padding: 24% 7% 0;
-  text-align: center;
-  background: url("../images/branding_02.png") no-repeat center;
-  background-size: contain;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-top .branding-j:hover {
-  color: #00ADB5;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-top .branding-equal {
-  position: relative;
-  display: block;
-  font-size: 30px;
-  font-weight: 700;
-  color: #222831;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-top .branding-logo {
-  position: relative;
-  display: block;
-  font-size: 12px;
-  color: #222831;
-  padding: 24% 6.5% 0;
-  text-align: center;
-  background: url("../images/logo.png") no-repeat center;
-  background-size: contain;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-top .branding-logo:hover {
-  color: #00ADB5;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-bottom {
-  position: relative;
-  display: block;
-  font-size: 13px;
-  line-height: 18px;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-bottom .branding-birth {
-  position: relative;
-  display: block;
-  padding: 20px 0;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-bottom .branding-birth .branding-brith-tit {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-bottom .branding-birth .branding-brith-tit i {
-  color: #00ADB5;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-bottom .branding-birth .branding-birth-info {
-  position: relative;
-  display: block;
-  width: 95%;
-  padding-left: 2%;
-  text-align: justify;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-bottom .branding-reason {
-  position: relative;
-  display: block;
-  padding: 20px 0;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-bottom .branding-reason .branding-reason-tit {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-bottom .branding-reason .branding-reason-tit i {
-  color: #00ADB5;
-}
-
-.branding .container .right .branding-wrap .branding-wrap-bottom .branding-reason .branding-reason-info {
-  position: relative;
-  display: block;
-  width: 95%;
-  padding-left: 2%;
-  text-align: justify;
-}
-
-.branding2 .container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 80px;
-}
-
-.branding2 .container .right .branding-wrap {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.branding2 .container .right .branding-wrap .left {
-  margin-right: 20px;
-}
-
-.branding2 .container .right .branding-wrap .left .branding-logo {
-  position: relative;
-  display: block;
-  font-size: 12px;
-  color: #222831;
-  padding: 120% 50% 0;
-  text-align: center;
-  background: url("../images/branding_04.png") no-repeat center;
-  background-size: contain;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.branding2 .container .right .branding-wrap .left .branding-logo:hover {
-  color: #00ADB5;
-}
-
-.branding2 .container .right .branding-wrap .right {
-  position: relative;
-  display: block;
-  font-size: 13px;
-  line-height: 18px;
-}
-
-.branding2 .container .right .branding-wrap .right .branding-birth {
-  position: relative;
-  display: block;
-  padding: 20px 0;
-}
-
-.branding2 .container .right .branding-wrap .right .branding-birth .branding-brith-tit {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-}
-
-.branding2 .container .right .branding-wrap .right .branding-birth .branding-brith-tit i {
-  color: #00ADB5;
-}
-
-.branding2 .container .right .branding-wrap .right .branding-birth .branding-birth-info {
-  position: relative;
-  display: block;
-  width: 95%;
-  padding-left: 2%;
-  text-align: justify;
-}
-
-.branding2 .container .right .branding-wrap .right .branding-reason {
-  position: relative;
-  display: block;
-  padding: 20px 0;
-}
-
-.branding2 .container .right .branding-wrap .right .branding-reason .branding-reason-tit {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-}
-
-.branding2 .container .right .branding-wrap .right .branding-reason .branding-reason-tit i {
-  color: #00ADB5;
-}
-
-.branding2 .container .right .branding-wrap .right .branding-reason .branding-reason-info {
-  position: relative;
-  display: block;
-  width: 95%;
-  padding-left: 2%;
-  text-align: justify;
-}
-
-.branding3 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 80px;
-}
-
-.branding3 .container .left .title {
-  margin-bottom: 32px;
-}
-
-.branding3 .container .left .branding-logo {
-  position: relative;
-  display: block;
-  font-size: 12px;
-  color: #222831;
-  padding: 120% 50% 0;
-  text-align: center;
-  background: url("../images/branding_04.png") no-repeat center;
-  background-size: contain;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.branding3 .container .left .branding-logo:hover {
-  color: #00ADB5;
-}
-
-.branding3 .container .right {
-  position: relative;
-  display: block;
-  font-size: 13px;
-  line-height: 18px;
-  margin-left: 20px;
-}
-
-.branding3 .container .right .branding-birth {
-  position: relative;
-  display: block;
-  padding: 20px 0;
-}
-
-.branding3 .container .right .branding-birth .branding-brith-tit {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-}
-
-.branding3 .container .right .branding-birth .branding-brith-tit i {
-  color: #00ADB5;
-}
-
-.branding3 .container .right .branding-birth .branding-birth-info {
-  position: relative;
-  display: block;
-  width: 95%;
-  padding-left: 2%;
-  text-align: justify;
-}
-
-.branding3 .container .right .branding-reason {
-  position: relative;
-  display: block;
-  padding: 20px 0;
-}
-
-.branding3 .container .right .branding-reason .branding-reason-tit {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-}
-
-.branding3 .container .right .branding-reason .branding-reason-tit i {
-  color: #00ADB5;
-}
-
-.branding3 .container .right .branding-reason .branding-reason-info {
-  position: relative;
-  display: block;
-  width: 95%;
-  padding-left: 2%;
-  text-align: justify;
-}
-
-/* //브렌딩 */
 /* 비주얼 */
 .visual {
   position: relative;
@@ -776,7 +433,7 @@ body {
           align-items: flex-end;
 }
 
-.visual .container .left .visual-face {
+.visual .container .visual-wrap .left .visual-face {
   position: relative;
   display: block;
   width: 100%;
@@ -785,13 +442,13 @@ body {
   border-radius: 10px;
 }
 
-.visual .container .left .visual-face img {
+.visual .container .visual-wrap .left .visual-face img {
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 12px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 12px;
   width: 100%;
 }
 
-.visual .container .right {
+.visual .container .visual-wrap .right {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,16 +459,17 @@ body {
   padding: 0 5vw;
 }
 
-.visual .container .right .intro-box {
+.visual .container .visual-wrap .right .intro-box {
   position: relative;
   display: block;
   width: calc(100% / 3);
   padding-left: 16px;
   margin-bottom: 10px;
+  white-space: nowrap;
   text-shadow: 0px 2px 12px rgba(149, 157, 165, 0.6);
 }
 
-.visual .container .right .intro-box h2 {
+.visual .container .visual-wrap .right .intro-box h2 {
   position: relative;
   display: block;
   font-size: 20px;
@@ -820,7 +478,7 @@ body {
   letter-spacing: 1rem;
 }
 
-.visual .container .right .intro-box h2 em {
+.visual .container .visual-wrap .right .intro-box h2 em {
   position: relative;
   display: block;
   font-size: 13px;
@@ -829,25 +487,25 @@ body {
   text-transform: uppercase;
 }
 
-.visual .container .right .intro-box .intro-info {
+.visual .container .visual-wrap .right .intro-box .intro-info {
   position: relative;
   display: block;
   padding-top: 16px;
   line-height: 16px;
 }
 
-.visual .container .right .intro-box .intro-info ul {
+.visual .container .visual-wrap .right .intro-box .intro-info ul {
   position: relative;
   display: block;
 }
 
-.visual .container .right .intro-box .intro-info ul li {
+.visual .container .visual-wrap .right .intro-box .intro-info ul li {
   position: relative;
   display: block;
   margin: 3px 0;
 }
 
-.visual .container .right .intro-box .intro-info ul li a {
+.visual .container .visual-wrap .right .intro-box .intro-info ul li a {
   position: relative;
   display: inline-block;
   -webkit-transition: all 0.3s;
@@ -855,7 +513,7 @@ body {
   color: #060606;
 }
 
-.visual .container .right .intro-box .intro-info ul li a::after {
+.visual .container .visual-wrap .right .intro-box .intro-info ul li a::after {
   content: '';
   position: absolute;
   left: 0;
@@ -868,15 +526,15 @@ body {
   transition: all 0.3s;
 }
 
-.visual .container .right .intro-box .intro-info ul li a:hover {
+.visual .container .visual-wrap .right .intro-box .intro-info ul li a:hover {
   color: #00ADB5;
 }
 
-.visual .container .right .intro-box .intro-info ul li a:hover::after {
+.visual .container .visual-wrap .right .intro-box .intro-info ul li a:hover::after {
   width: 100%;
 }
 
-.visual .container .right .intro-box h3 {
+.visual .container .visual-wrap .right .intro-box h3 {
   position: relative;
   display: block;
   font-size: 14px;
@@ -886,20 +544,20 @@ body {
   text-transform: uppercase;
 }
 
-.visual .container .right .intro-box .intro-skill {
+.visual .container .visual-wrap .right .intro-box .intro-skill {
   position: relative;
   display: block;
   width: 100%;
   padding-top: 12px;
 }
 
-.visual .container .right .intro-box .intro-skill .skill-list {
+.visual .container .visual-wrap .right .intro-box .intro-skill .skill-list {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.visual .container .right .intro-box .intro-skill .skill-list li {
+.visual .container .visual-wrap .right .intro-box .intro-skill .skill-list li {
   position: relative;
   display: block;
   height: 22px;
@@ -908,23 +566,23 @@ body {
   font-size: 0;
 }
 
-.visual .container .right .intro-box .intro-skill .skill-list li img {
+.visual .container .visual-wrap .right .intro-box .intro-skill .skill-list li img {
   height: 100%;
   image-rendering: -webkit-optimize-contrast;
 }
 
-.visual .container .right .intro-box .intro-profile {
+.visual .container .visual-wrap .right .intro-box .intro-profile {
   position: relative;
   display: block;
   padding-top: 12px;
 }
 
-.visual .container .right .intro-box .intro-profile .profile-list {
+.visual .container .visual-wrap .right .intro-box .intro-profile .profile-list {
   position: relative;
   display: block;
 }
 
-.visual .container .right .intro-box .intro-profile .profile-list li {
+.visual .container .visual-wrap .right .intro-box .intro-profile .profile-list li {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -935,11 +593,11 @@ body {
   margin: 15px 0;
 }
 
-.visual .container .right .intro-box .intro-profile .profile-list li:first-child {
+.visual .container .visual-wrap .right .intro-box .intro-profile .profile-list li:first-child {
   margin-top: 0;
 }
 
-.visual .container .right .intro-box .intro-profile .profile-list li span {
+.visual .container .visual-wrap .right .intro-box .intro-profile .profile-list li span {
   position: relative;
   display: block;
   width: calc(100% - 60px);
@@ -948,58 +606,362 @@ body {
   white-space: nowrap;
 }
 
-.visual .container .right .intro-box .intro-profile .profile-list li span:first-child {
+.visual .container .visual-wrap .right .intro-box .intro-profile .profile-list li span:first-child {
   width: 50px;
   font-size: 10px;
   color: #393E46;
 }
 
-.visual .container .right .intro-box-small {
+.visual .container .visual-wrap .right .intro-box-small {
   width: calc(100% / 4);
 }
 
-.visual .container .right .intro-box-big {
+.visual .container .visual-wrap .right .intro-box-big {
   width: calc((100% - (100% / 4)) / 2);
 }
 
+@media all and (max-width: 1200px) {
+  .visual .container .frontend {
+    width: 100%;
+  }
+  .visual .container .frontend .frontend-txt .frontend-deco-1 {
+    left: 0;
+  }
+  .visual .container .frontend .frontend-txt h1 {
+    white-space: nowrap;
+  }
+  .visual .container .frontend .frontend-face .frontend-deco-5 {
+    width: 15.84vw;
+    height: 11.34vw;
+  }
+  .visual .container .frontend .frontend-face .frontend-deco-5 span {
+    width: 90%;
+    font-size: 2vw;
+    line-height: 2.34vw;
+  }
+  .visual .container .frontend .frontend-face .frontend-deco-6 {
+    left: unset;
+    right: -90px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .visual .container .frontend {
+    width: 100%;
+  }
+  .visual .container .frontend .frontend-txt .frontend-deco-1 {
+    left: 0;
+  }
+  .visual .container .frontend .frontend-txt h1 {
+    font-size: 6.05vw;
+  }
+}
+
 @media all and (max-width: 768px) {
-  .visual .container {
+  .visual .container .frontend {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .visual .container .frontend .frontend-txt {
+    width: calc(100% / 12 * 9);
+  }
+  .visual .container .frontend .frontend-txt .frontend-deco-1 {
+    left: calc(-12.76vw / 2);
+    width: 12.76vw;
+    height: 8.34vw;
+  }
+  .visual .container .frontend .frontend-txt .frontend-deco-2 {
+    width: 7.03vw;
+    height: 5.99vw;
+  }
+  .visual .container .frontend .frontend-txt .frontend-deco-3 {
+    right: 12.76vw;
+    width: 12.76vw;
+    height: 8.34vw;
+  }
+  .visual .container .frontend .frontend-txt h1 {
+    padding: 5.2vw 0;
+    text-align: center;
+    font-size: 8.07vw;
+    line-height: 8.59vw;
+  }
+  .visual .container .frontend .frontend-face .frontend-deco-5 span {
+    width: 100%;
+  }
+  .visual .container .frontend .frontend-face .frontend-deco-6 {
+    display: none;
+  }
+  .visual .container .visual-wrap {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .visual .container h1 {
-    text-indent: 0;
-    text-align: center;
+  .visual .container .visual-wrap div {
+    margin: 2.6vw 0;
   }
-  .visual .container .right {
+  .visual .container .visual-wrap .right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .visual .container .right .intro-box {
+  .visual .container .visual-wrap .right .intro-box {
     padding-top: 15px;
   }
-  .visual .container .right .intro-box-small {
+  .visual .container .visual-wrap .right .intro-box-small {
     width: 100%;
   }
-  .visual .container .right .intro-box-big {
+  .visual .container .visual-wrap .right .intro-box-big {
     width: 100%;
+  }
+}
+
+@media all and (max-width: 624px) {
+  .visual .container .frontend .frontend-face .frontend-deco-5 span {
+    font-size: 14px;
+    line-height: 3.5vw;
   }
 }
 
 @media all and (max-width: 480px) {
-  .visual .container h1 {
-    padding: 0 4vw;
+  .visual .container .frontend {
+    padding: 10vw 1vw;
   }
-  .visual .container .left .visual-face {
-    width: 80%;
+  .visual .container .frontend .frontend-txt {
+    width: 100%;
+    margin: 8.34vw 0;
+  }
+  .visual .container .frontend .frontend-txt .frontend-deco-1 {
+    display: none;
+  }
+  .visual .container .frontend .frontend-txt .frontend-deco-2 {
+    display: none;
+  }
+  .visual .container .frontend .frontend-txt .frontend-deco-3 {
+    right: calc(20.42vw / 2 - 10vw);
+    bottom: 13.34vw;
+    width: 20.42vw;
+    height: 13.34vw;
+  }
+  .visual .container .frontend .frontend-txt h1 {
+    font-size: 12.92vw;
+    line-height: 13.17vw;
+    white-space: unset;
+  }
+  .visual .container .frontend .frontend-face {
+    width: calc(100% - 16vw);
+  }
+  .visual .container .frontend .frontend-face .frontend-deco-5 {
+    width: 39.58vw;
+    height: 28.33vw;
+  }
+  .visual .container .frontend .frontend-face .frontend-deco-5 span {
+    font-size: 5vw;
+    line-height: 6.25vw;
+  }
+  .visual .container .visual-wrap .left .visual-face {
     margin: 0 auto;
+    width: 75vw;
   }
 }
 
 /* //비주얼 */
+/* 브렌딩 */
+.branding .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 80px;
+}
+
+.branding .container .right .branding-wrap {
+  position: relative;
+  display: block;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-top {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #222831;
+  padding: 0 20%;
+  margin: 40px 0;
+  text-transform: uppercase;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-top .branding-moon {
+  position: relative;
+  display: block;
+  font-size: 12px;
+  color: #222831;
+  padding: 24% 5.4% 0;
+  text-align: center;
+  background: url("../images/branding_01.png") no-repeat center;
+  background-size: contain;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-top .branding-moon:hover {
+  color: #00ADB5;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-top .branding-plus {
+  position: relative;
+  display: block;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-top .branding-j {
+  position: relative;
+  display: block;
+  font-size: 12px;
+  color: #222831;
+  padding: 24% 7% 0;
+  text-align: center;
+  background: url("../images/branding_02.png") no-repeat center;
+  background-size: contain;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-top .branding-j:hover {
+  color: #00ADB5;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-top .branding-equal {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  color: #222831;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-top .branding-logo {
+  position: relative;
+  display: block;
+  font-size: 12px;
+  color: #222831;
+  padding: 24% 6.5% 0;
+  text-align: center;
+  background: url("../images/logo.png") no-repeat center;
+  background-size: contain;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-top .branding-logo:hover {
+  color: #00ADB5;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom {
+  position: relative;
+  display: block;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom .branding-tit {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom .branding-tit i {
+  color: #00ADB5;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom .branding-info {
+  font-size: 13px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom .branding-birth {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom .branding-birth .branding-brith-tit {
+  position: relative;
+  display: block;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom .branding-birth .branding-birth-info {
+  position: relative;
+  display: block;
+  width: 95%;
+  padding-left: 2%;
+  text-align: justify;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom .branding-reason {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom .branding-reason .branding-reason-tit {
+  position: relative;
+  display: block;
+}
+
+.branding .container .right .branding-wrap .branding-wrap-bottom .branding-reason .branding-reason-info {
+  position: relative;
+  display: block;
+  width: 95%;
+  padding-left: 2%;
+}
+
+@media all and (max-width: 1024px) {
+  .branding .container .right .branding-wrap .branding-wrap-top .branding-moon {
+    padding-top: 40%;
+  }
+  .branding .container .right .branding-wrap .branding-wrap-top .branding-plus {
+    padding: 0 4%;
+  }
+  .branding .container .right .branding-wrap .branding-wrap-top .branding-j {
+    padding-top: 40%;
+  }
+  .branding .container .right .branding-wrap .branding-wrap-top .branding-equal {
+    padding: 0 4%;
+  }
+  .branding .container .right .branding-wrap .branding-wrap-top .branding-logo {
+    padding-top: 40%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .branding .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .branding .container .right .branding-wrap {
+    padding: 0;
+    margin: 10vw;
+  }
+  .branding .container .right .branding-wrap .branding-wrap-top .branding-moon {
+    padding: 70% 15% 0;
+  }
+  .branding .container .right .branding-wrap .branding-wrap-top .branding-j {
+    padding: 70% 15% 0;
+  }
+  .branding .container .right .branding-wrap .branding-wrap-top .branding-logo {
+    padding: 70% 15% 0;
+  }
+}
+
+/* //브렌딩 */
 /* 포트폴리오 */
 .portfolio {
   position: relative;
@@ -1551,6 +1513,16 @@ body {
   font-size: 14px;
   text-align: center;
   color: #fff;
+}
+
+.footer .container .right .copy::-moz-selection {
+  background-color: #222831;
+  color: #00ADB5;
+}
+
+.footer .container .right .copy::selection {
+  background-color: #222831;
+  color: #00ADB5;
 }
 
 @media all and (max-width: 768px) {

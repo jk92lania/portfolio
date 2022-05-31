@@ -244,331 +244,6 @@ body {
     display: block;
 }
 
-/* 브렌딩 */
-.branding {
-    .container {
-        display: flex;
-        padding-top: 80px;
-        .left {
-
-        }
-        .right {
-            .branding-wrap {
-                position: relative;
-                display: block;
-                .branding-wrap-top {
-                    position: relative;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    font-size: 30px;
-                    font-weight: 700;
-                    color: #222831;
-                    padding: 0 20%;
-
-                    text-transform: uppercase;
-                    .branding-moon {
-                        position: relative;
-                        display: block;
-
-                        font-size: 12px;
-                        color: #222831;
-
-                        padding: 24% 5.4% 0;
-                        text-align: center;
-                        background: url('../images/branding_01.png') no-repeat center;
-                        background-size: contain;
-
-                        transition: all 0.3s;
-                        &:hover {
-                            color: #00ADB5;
-                        }
-                    }
-                    .branding-plus {
-                        position: relative;
-                        display: block;
-                    }
-                    .branding-j {
-                        position: relative;
-                        display: block;
-                        
-                        font-size: 12px;
-                        color: #222831;
-
-                        padding: 24% 7% 0;
-                        text-align: center;
-                        background: url('../images/branding_02.png') no-repeat center;
-                        background-size: contain;
-
-                        transition: all 0.3s;
-                        &:hover {
-                            color: #00ADB5;
-                        }
-
-                    }
-                    .branding-equal {
-                        position: relative;
-                        display: block;
-                        font-size: 30px;
-                        font-weight: 700;
-                        color: #222831;
-                    }
-                    .branding-logo {
-                        position: relative;
-                        display: block;
-                        
-                        font-size: 12px;
-                        color: #222831;
-
-                        padding: 24% 6.5% 0;
-                        text-align: center;
-                        background: url('../images/logo.png') no-repeat center;
-                        background-size: contain;
-
-                        transition: all 0.3s;
-
-                        &:hover {
-                            color: #00ADB5;
-                        }
-
-                    }
-                }
-                .branding-wrap-bottom {
-                    position: relative;
-                    display: block;
-
-                    font-size: 13px;
-                    line-height: 18px;
-
-                    .branding-birth {
-                        position: relative;
-                        display: block;
-                        padding: 20px 0;
-                        .branding-brith-tit {
-                            position: relative;
-                            display: block;
-                            font-size: 16px;
-                            font-weight: 500;
-                            line-height: 30px;
-                            i {
-                                color: #00ADB5;
-                            }
-                        }
-                        .branding-birth-info {
-                            position: relative;
-                            display: block;
-                            width: 95%;
-                            padding-left: 2%;
-                            text-align: justify;
-                        }
-                    }
-                    .branding-reason {
-                        position: relative;
-                        display: block;
-                        padding: 20px 0;
-                        .branding-reason-tit {
-                            position: relative;
-                            display: block;
-                            font-size: 16px;
-                            font-weight: 500;
-                            line-height: 30px;
-                            i {
-                                color: #00ADB5;
-                            }
-                        }
-                        .branding-reason-info {
-                            position: relative;
-                            display: block;
-                            width: 95%;
-                            padding-left: 2%;
-                            text-align: justify;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.branding2 {
-    .container {
-        position: relative;
-        display: flex;
-        padding-top: 80px;
-        .left {
-
-        }
-        .right {
-            .branding-wrap {
-                position: relative;
-                display: flex;
-                align-items: center;
-                .left {
-                    margin-right: 20px;
-                    .branding-logo {
-                        position: relative;
-                        display: block;
-                        
-                        font-size: 12px;
-                        color: #222831;
-
-                        padding: 120% 50% 0;
-                        text-align: center;
-                        background: url('../images/branding_04.png') no-repeat center;
-                        background-size: contain;
-
-                        transition: all 0.3s;
-
-                        &:hover {
-                            color: #00ADB5;
-                        }
-
-                    }
-                }
-                .right {
-                    position: relative;
-                    display: block;
-
-                    font-size: 13px;
-                    line-height: 18px;
-
-                    .branding-birth {
-                        position: relative;
-                        display: block;
-                        padding: 20px 0;
-                        .branding-brith-tit {
-                            position: relative;
-                            display: block;
-                            font-size: 16px;
-                            font-weight: 500;
-                            line-height: 30px;
-                            i {
-                                color: #00ADB5;
-                            }
-                        }
-                        .branding-birth-info {
-                            position: relative;
-                            display: block;
-                            width: 95%;
-                            padding-left: 2%;
-                            text-align: justify;
-                        }
-                    }
-                    .branding-reason {
-                        position: relative;
-                        display: block;
-                        padding: 20px 0;
-                        .branding-reason-tit {
-                            position: relative;
-                            display: block;
-                            font-size: 16px;
-                            font-weight: 500;
-                            line-height: 30px;
-                            i {
-                                color: #00ADB5;
-                            }
-                        }
-                        .branding-reason-info {
-                            position: relative;
-                            display: block;
-                            width: 95%;
-                            padding-left: 2%;
-                            text-align: justify;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.branding3 {
-    .container {
-        display: flex;
-        align-items: center;
-        padding-top: 80px;
-        .left {
-            .title {
-                margin-bottom: 32px;
-            }
-            .branding-logo {
-                position: relative;
-                display: block;
-                
-                font-size: 12px;
-                color: #222831;
-
-                padding: 120% 50% 0;
-                text-align: center;
-                background: url('../images/branding_04.png') no-repeat center;
-                background-size: contain;
-
-                transition: all 0.3s;
-
-                &:hover {
-                    color: #00ADB5;
-                }
-            }
-        }
-        .right {
-            position: relative;
-            display: block;
-
-            font-size: 13px;
-            line-height: 18px;
-            margin-left: 20px;
-
-            .branding-birth {
-                position: relative;
-                display: block;
-                padding: 20px 0;
-                .branding-brith-tit {
-                    position: relative;
-                    display: block;
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 30px;
-                    i {
-                        color: #00ADB5;
-                    }
-                }
-                .branding-birth-info {
-                    position: relative;
-                    display: block;
-                    width: 95%;
-                    padding-left: 2%;
-                    text-align: justify;
-                }
-            }
-            .branding-reason {
-                position: relative;
-                display: block;
-                padding: 20px 0;
-                .branding-reason-tit {
-                    position: relative;
-                    display: block;
-                    font-size: 16px;
-                    font-weight: 500;
-                    line-height: 30px;
-                    i {
-                        color: #00ADB5;
-                    }
-                }
-                .branding-reason-info {
-                    position: relative;
-                    display: block;
-                    width: 95%;
-                    padding-left: 2%;
-                    text-align: justify;
-                }
-            }
-        }
-    }
-}
-
-/* //브렌딩 */
-
-
 /* 비주얼 */
 .visual {
     position: relative;
@@ -715,176 +390,235 @@ body {
             display: flex;
             flex-wrap: wrap;
             align-items: flex-end;
-        }
-        .left {
-            .visual-face {
-                position: relative;
-                display: block;
-                width: 100%;
-                padding: 10px 0;
-                overflow: hidden;
-                border-radius: 10px;
-                img {
-                    box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 12px;
+            .left {
+                .visual-face {
+                    position: relative;
+                    display: block;
                     width: 100%;
+                    padding: 10px 0;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    img {
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 12px;
+                        width: 100%;
+                    }
                 }
             }
-        }
-        .right {
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            padding: 0 5vw;
-            .intro-box {
+            .right {
                 position: relative;
-                display: block;
-                width: calc(100% / 3);
-
-                padding-left: 16px;
-                margin-bottom: 10px;
-                
-                text-shadow: 0px 2px 12px rgba(149, 157, 165, 0.6);
-
-
-                h2 {
+                display: flex;
+                align-items: flex-end;
+                padding: 0 5vw;
+                .intro-box {
                     position: relative;
                     display: block;
+                    width: calc(100% / 3);
+    
+                    padding-left: 16px;
+                    margin-bottom: 10px;
+                    white-space: nowrap;
                     
-                    font-size: 20px;
-                    color: #222831;
-                    font-weight: 700;
-                    letter-spacing: 1rem;
-                    em {
+                    text-shadow: 0px 2px 12px rgba(149, 157, 165, 0.6);
+    
+    
+                    h2 {
                         position: relative;
                         display: block;
-                        font-size: 13px;
-                        line-height: 28px;
-                        letter-spacing: 0.005rem;
-                        text-transform: uppercase;
-                    }
-                }                
-                .intro-info {
-                    position: relative;
-                    display: block;
-
-                    padding-top: 16px;
-                    line-height: 16px; 
-                    ul {
-                        position: relative;
-                        display: block;
-                        li {
+                        
+                        font-size: 20px;
+                        color: #222831;
+                        font-weight: 700;
+                        letter-spacing: 1rem;
+                        em {
                             position: relative;
                             display: block;
-                            margin: 3px 0;
-
-                            a {
+                            font-size: 13px;
+                            line-height: 28px;
+                            letter-spacing: 0.005rem;
+                            text-transform: uppercase;
+                        }
+                    }                
+                    .intro-info {
+                        position: relative;
+                        display: block;
+    
+                        padding-top: 16px;
+                        line-height: 16px; 
+                        ul {
+                            position: relative;
+                            display: block;
+                            li {
                                 position: relative;
-                                display: inline-block;
-                                transition: all 0.3s;
-                                color: #060606;
-
-                                &::after {
-                                    content: '';
-                                    position: absolute;
-                                    left: 0;
-                                    top: 100%;
-                                    display: block;
-                                    width: 0;
-                                    height: 1px;
-                                    background-color: #00ADB5;
-                                    
+                                display: block;
+                                margin: 3px 0;
+    
+                                a {
+                                    position: relative;
+                                    display: inline-block;
                                     transition: all 0.3s;
-                                }
-                                &:hover {
-                                    color: #00ADB5;
-
-                                }
-                                &:hover::after {
-                                    width: 100%;
+                                    color: #060606;
+    
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        left: 0;
+                                        top: 100%;
+                                        display: block;
+                                        width: 0;
+                                        height: 1px;
+                                        background-color: #00ADB5;
+                                        
+                                        transition: all 0.3s;
+                                    }
+                                    &:hover {
+                                        color: #00ADB5;
+    
+                                    }
+                                    &:hover::after {
+                                        width: 100%;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-
-                h3 {
-                    position: relative;
-                    display: block;
-                    font-size: 14px;
-                    font-weight: 700;
-                    color: #393E46;
-                    line-height: 24px;
-                    text-transform: uppercase;
-                }
-
-                .intro-skill {
-                    position: relative;
-                    display: block;
-                    width: 100%;
-                    padding-top: 12px;
-
-                    .skill-list {
+    
+                    h3 {
+                        position: relative;
+                        display: block;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #393E46;
+                        line-height: 24px;
+                        text-transform: uppercase;
+                    }
+    
+                    .intro-skill {
                         position: relative;
                         display: block;
                         width: 100%;
-                        
-                        li {
+                        padding-top: 12px;
+    
+                        .skill-list {
                             position: relative;
                             display: block;
-                            height: 22px;
-                            float: left;
-                            margin: 4px 12px 4px 0px;
-                            font-size: 0;
-                            img {
-                                height: 100%;
-                                image-rendering: -webkit-optimize-contrast;
+                            width: 100%;
+                            
+                            li {
+                                position: relative;
+                                display: block;
+                                height: 22px;
+                                float: left;
+                                margin: 4px 12px 4px 0px;
+                                font-size: 0;
+                                img {
+                                    height: 100%;
+                                    image-rendering: -webkit-optimize-contrast;
+                                }
                             }
                         }
                     }
-                }
-
-                .intro-profile {
-                    position: relative;
-                    display: block;
-                    padding-top: 12px;
-                    .profile-list {
+    
+                    .intro-profile {
                         position: relative;
                         display: block;
-                        li {
+                        padding-top: 12px;
+                        .profile-list {
                             position: relative;
-                            display: flex;
-                            align-items: flex-end;
-                            margin: 15px 0;
-
-                            &:first-child {
-                                margin-top: 0;
-                            }
-
-                            span {
+                            display: block;
+                            li {
                                 position: relative;
-                                display: block;
-                                width: calc(100% - 60px);
-
-                                text-align: left;
-                                font-size: 13px;
-                                white-space: nowrap;
-                                
+                                display: flex;
+                                align-items: flex-end;
+                                margin: 15px 0;
+    
                                 &:first-child {
-                                    width: 50px;
-                                    font-size: 10px;
-                                    color: #393E46;
+                                    margin-top: 0;
+                                }
+    
+                                span {
+                                    position: relative;
+                                    display: block;
+                                    width: calc(100% - 60px);
+    
+                                    text-align: left;
+                                    font-size: 13px;
+                                    white-space: nowrap;
+                                    
+                                    &:first-child {
+                                        width: 50px;
+                                        font-size: 10px;
+                                        color: #393E46;
+                                    }
                                 }
                             }
                         }
                     }
                 }
+    
+                .intro-box-small {
+                    width: calc(100% / 4);
+                }
+                .intro-box-big {
+                    width: calc((100% - (100% / 4)) / 2);
+                }
             }
+        }
+    }
+}
 
-            .intro-box-small {
-                width: calc(100% / 4);
+@media all and (max-width: 1200px) {
+    .visual {
+        .container {
+            .frontend {
+                width: 100%;
+                .frontend-txt {
+                    .frontend-deco-1 {
+                        left: 0;
+                    }
+                    h1 {
+                        white-space: nowrap;
+                    }
+                }
+                .frontend-face {
+                    .frontend-deco-5 {
+                        width: 15.84vw;
+                        height: 11.34vw;
+                        span {
+                            width: 90%;
+                            font-size: 2vw;
+                            line-height: 2.34vw;
+                        }
+                    }
+                    .frontend-deco-6 {
+                        left: unset;
+                        right: -90px;
+                    }
+                }
             }
-            .intro-box-big {
-                width: calc((100% - (100% / 4)) / 2);
+            .visual-wrap {
+
+            }
+        }
+    }
+}
+@media all and (max-width: 1024px) {
+    .visual {
+        .container {
+            .frontend {
+                width: 100%;
+                .frontend-txt {
+                    .frontend-deco-1 {
+                        left: 0;
+                    }
+                    h1 {
+                        font-size: 6.05vw;
+                    }
+                }
+                .frontend-face {
+                }
+            }
+            .visual-wrap {
+
             }
         }
     }
@@ -893,23 +627,85 @@ body {
 @media all and (max-width: 768px) {
     .visual {
         .container {
-            align-items: flex-start;
-            h1 {
-                text-indent: 0;
-                text-align: center;
+            .frontend {
+                flex-direction: column-reverse;
+                .frontend-txt {
+                    width: calc(100% / 12 * 9);
+                    .frontend-deco-1 {
+                        left: calc(-12.76vw / 2);
+                        width: 12.76vw;
+                        height: 8.34vw;
+                    }
+                    .frontend-deco-2 {
+                        width: 7.03vw;
+                        height: 5.99vw;
+                    }
+                    .frontend-deco-3 {
+                        right: 12.76vw;
+                        width: 12.76vw;
+                        height: 8.34vw;
+                    }
+                    h1 {
+                        padding: 5.2vw 0;
+                        text-align: center;
+                        font-size: 8.07vw;
+                        line-height: 8.59vw;
+                    }
+                }
+                .frontend-face {
+                    .frontend-deco-5 {
+                        span {
+                            width: 100%;
+                        }
+                    }
+                    .frontend-deco-6 {
+                        display: none;
+                    }
+                }
             }
-            .right {
-                flex-direction: column;
-                .intro-box {
-                    padding-top: 15px;
+            .visual-wrap {
+                align-items: flex-start;
+                div {
+                    margin: 2.6vw 0;
                 }
-                .intro-box-small {
-                    width: 100%;
+                .right {
+                    flex-direction: column;
+                    .intro-box {
+                        padding-top: 15px;
+                    }
+                    .intro-box-small {
+                        width: 100%;
+                    }
+                    .intro-box-big {
+                        width: 100%;
+                        
+                    }
                 }
-                .intro-box-big {
-                    width: 100%;
+
+            }
+        }
+    }
+}
+@media all and (max-width: 624px) {
+    .visual {
+        .container {
+            .frontend {
+                .frontend-txt {
+                }
+                .frontend-face {
+                    .frontend-deco-5 {
+                        span {
+                            font-size: 14px;
+                            line-height: 3.5vw;
+                        }
+                    }
                     
                 }
+            }
+            .visual-wrap {
+                .right {
+                }
+
             }
         }
     }
@@ -917,19 +713,261 @@ body {
 @media all and (max-width: 480px) {
     .visual {
         .container {
-            h1 {
-                padding: 0 4vw;
+            .frontend {
+                padding: 10vw 1vw;
+                .frontend-txt {
+                    width: 100%;
+                    margin: 8.34vw 0;
+                    .frontend-deco-1 {
+                        display: none;
+                    }
+                    .frontend-deco-2 {
+                        display: none;
+                    }
+                    .frontend-deco-3 {
+                        right: calc(20.42vw / 2 - 10vw);
+                        bottom: 13.34vw;
+                        width: 20.42vw;
+                        height:13.34vw;
+                    }
+                    h1 {
+                        font-size: 12.92vw;
+                        line-height: 13.17vw;
+                        white-space: unset;
+                    }
+                }
+                .frontend-face {
+                    width: calc(100% - 16vw);
+                    .frontend-deco-5 {
+                        width: 39.58vw;
+                        height: 28.33vw;
+                        span {
+                            font-size:5vw;
+                            line-height: 6.25vw;
+                        }
+                    }
+                    
+                }
             }
-            .left {
-                .visual-face {
-                    width: 80%;
-                    margin: 0 auto;
+            .visual-wrap {
+                .left {
+                    .visual-face {
+                        margin: 0 auto;
+                        width: 75vw;
+                    }
                 }
             }
         }
     }
 }
 /* //비주얼 */
+
+
+/* 브렌딩 */
+.branding {
+    .container {
+        display: flex;
+        padding-top: 80px;
+        .left {
+
+        }
+        .right {
+            .branding-wrap {
+                position: relative;
+                display: block;
+                .branding-wrap-top {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: #222831;
+                    padding: 0 20%;
+                    margin: 40px 0;
+
+                    text-transform: uppercase;
+                    .branding-moon {
+                        position: relative;
+                        display: block;
+
+                        font-size: 12px;
+                        color: #222831;
+
+                        padding: 24% 5.4% 0;
+                        text-align: center;
+                        background: url('../images/branding_01.png') no-repeat center;
+                        background-size: contain;
+
+                        transition: all 0.3s;
+                        &:hover {
+                            color: #00ADB5;
+                        }
+                    }
+                    .branding-plus {
+                        position: relative;
+                        display: block;
+                    }
+                    .branding-j {
+                        position: relative;
+                        display: block;
+                        
+                        font-size: 12px;
+                        color: #222831;
+
+                        padding: 24% 7% 0;
+                        text-align: center;
+                        background: url('../images/branding_02.png') no-repeat center;
+                        background-size: contain;
+
+                        transition: all 0.3s;
+                        &:hover {
+                            color: #00ADB5;
+                        }
+
+                    }
+                    .branding-equal {
+                        position: relative;
+                        display: block;
+                        font-size: 30px;
+                        font-weight: 700;
+                        color: #222831;
+                    }
+                    .branding-logo {
+                        position: relative;
+                        display: block;
+                        
+                        font-size: 12px;
+                        color: #222831;
+
+                        padding: 24% 6.5% 0;
+                        text-align: center;
+                        background: url('../images/logo.png') no-repeat center;
+                        background-size: contain;
+
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: #00ADB5;
+                        }
+
+                    }
+                }
+                .branding-wrap-bottom {
+                    position: relative;
+                    display: block;
+
+                    .branding-tit {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 36px;
+                        i {
+                            color: #00ADB5;
+                        }
+                        
+                    }
+                    .branding-info {
+                        font-size: 13px;
+                        line-height: 24px;
+                        text-align: justify;
+
+                    }
+
+                    .branding-birth {
+                        position: relative;
+                        display: block;
+                        padding: 20px 0;
+                        .branding-brith-tit {
+                            position: relative;
+                            display: block;
+                        }
+                        .branding-birth-info {
+                            position: relative;
+                            display: block;
+                            width: 95%;
+                            padding-left: 2%;
+                            text-align: justify;
+                        }
+                    }
+                    .branding-reason {
+                        position: relative;
+                        display: block;
+                        padding: 20px 0;
+                        .branding-reason-tit {
+                            position: relative;
+                            display: block;
+                        }
+                        .branding-reason-info {
+                            position: relative;
+                            display: block;
+                            width: 95%;
+                            padding-left: 2%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .branding {
+        .container {
+            .right {
+                .branding-wrap {
+                    .branding-wrap-top {
+                        .branding-moon {
+                            padding-top: 40%;
+                        }
+                        .branding-plus {
+                            padding: 0 4%;
+                        }
+                        .branding-j {
+                            padding-top: 40%;
+                        }
+                        .branding-equal {
+                            padding: 0 4%;
+                        }
+                        .branding-logo {
+                            padding-top: 40%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 480px) {
+    .branding {
+        .container {
+            flex-direction: column;
+            .right {
+                .branding-wrap {
+                    padding: 0;
+                    margin: 10vw;
+                    .branding-wrap-top {
+                        .branding-moon {
+                            padding: 70% 15% 0;
+                        }
+                        .branding-plus {
+                        }
+                        .branding-j {
+                            padding: 70% 15% 0;
+                        }
+                        .branding-equal {
+                        }
+                        .branding-logo {
+                            padding: 70% 15% 0;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+/* //브렌딩 */
 
 
 /* 포트폴리오 */
@@ -1470,6 +1508,11 @@ body {
                 font-size: 14px;
                 text-align: center;
                 color: #fff;
+
+                &::selection {
+                    background-color: #222831;
+                    color: #00ADB5;
+                }
             }
         }
     }
