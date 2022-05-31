@@ -364,7 +364,7 @@ window.onload = function () {
           //보이는 슬라이드 개수 설정
           $(".sw-portfolio").each(function(index){
             console.log("innerWidth : " + window.innerWidth);
-              if (window.innerWidth > 1200){ //PC 버전
+              if (window.innerWidth > 1024){ //PC 버전
                   view = 6;
               }else if(window.innerWidth > 480){ //pad 버전
                   view = 4;

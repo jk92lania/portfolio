@@ -8,6 +8,10 @@
     padding: 0;
     box-sizing: border-box;
     /* outline-style: none; */
+    &::selection {
+        background-color: #00ADB5;
+        color: #eeeeee;
+    }
 }
 
 a {
@@ -26,11 +30,13 @@ li {
 
 html {
     font-size: 10px;
+    
 }
 
 body {
     font-size: 1.2rem;
     font-family: 'Noto Sans KR', sans-serif;
+    
 }
 
 /* 공통요소 */
@@ -136,6 +142,7 @@ body {
     border-radius: 4px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 12px ;
     transition: all 0.5s;
+    cursor: pointer;
 
     &:hover {
         color: #fff;
@@ -236,6 +243,331 @@ body {
     position: relative;
     display: block;
 }
+
+/* 브렌딩 */
+.branding {
+    .container {
+        display: flex;
+        padding-top: 80px;
+        .left {
+
+        }
+        .right {
+            .branding-wrap {
+                position: relative;
+                display: block;
+                .branding-wrap-top {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: #222831;
+                    padding: 0 20%;
+
+                    text-transform: uppercase;
+                    .branding-moon {
+                        position: relative;
+                        display: block;
+
+                        font-size: 12px;
+                        color: #222831;
+
+                        padding: 24% 5.4% 0;
+                        text-align: center;
+                        background: url('../images/branding_01.png') no-repeat center;
+                        background-size: contain;
+
+                        transition: all 0.3s;
+                        &:hover {
+                            color: #00ADB5;
+                        }
+                    }
+                    .branding-plus {
+                        position: relative;
+                        display: block;
+                    }
+                    .branding-j {
+                        position: relative;
+                        display: block;
+                        
+                        font-size: 12px;
+                        color: #222831;
+
+                        padding: 24% 7% 0;
+                        text-align: center;
+                        background: url('../images/branding_02.png') no-repeat center;
+                        background-size: contain;
+
+                        transition: all 0.3s;
+                        &:hover {
+                            color: #00ADB5;
+                        }
+
+                    }
+                    .branding-equal {
+                        position: relative;
+                        display: block;
+                        font-size: 30px;
+                        font-weight: 700;
+                        color: #222831;
+                    }
+                    .branding-logo {
+                        position: relative;
+                        display: block;
+                        
+                        font-size: 12px;
+                        color: #222831;
+
+                        padding: 24% 6.5% 0;
+                        text-align: center;
+                        background: url('../images/logo.png') no-repeat center;
+                        background-size: contain;
+
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: #00ADB5;
+                        }
+
+                    }
+                }
+                .branding-wrap-bottom {
+                    position: relative;
+                    display: block;
+
+                    font-size: 13px;
+                    line-height: 18px;
+
+                    .branding-birth {
+                        position: relative;
+                        display: block;
+                        padding: 20px 0;
+                        .branding-brith-tit {
+                            position: relative;
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            i {
+                                color: #00ADB5;
+                            }
+                        }
+                        .branding-birth-info {
+                            position: relative;
+                            display: block;
+                            width: 95%;
+                            padding-left: 2%;
+                            text-align: justify;
+                        }
+                    }
+                    .branding-reason {
+                        position: relative;
+                        display: block;
+                        padding: 20px 0;
+                        .branding-reason-tit {
+                            position: relative;
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            i {
+                                color: #00ADB5;
+                            }
+                        }
+                        .branding-reason-info {
+                            position: relative;
+                            display: block;
+                            width: 95%;
+                            padding-left: 2%;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.branding2 {
+    .container {
+        position: relative;
+        display: flex;
+        padding-top: 80px;
+        .left {
+
+        }
+        .right {
+            .branding-wrap {
+                position: relative;
+                display: flex;
+                align-items: center;
+                .left {
+                    margin-right: 20px;
+                    .branding-logo {
+                        position: relative;
+                        display: block;
+                        
+                        font-size: 12px;
+                        color: #222831;
+
+                        padding: 120% 50% 0;
+                        text-align: center;
+                        background: url('../images/branding_04.png') no-repeat center;
+                        background-size: contain;
+
+                        transition: all 0.3s;
+
+                        &:hover {
+                            color: #00ADB5;
+                        }
+
+                    }
+                }
+                .right {
+                    position: relative;
+                    display: block;
+
+                    font-size: 13px;
+                    line-height: 18px;
+
+                    .branding-birth {
+                        position: relative;
+                        display: block;
+                        padding: 20px 0;
+                        .branding-brith-tit {
+                            position: relative;
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            i {
+                                color: #00ADB5;
+                            }
+                        }
+                        .branding-birth-info {
+                            position: relative;
+                            display: block;
+                            width: 95%;
+                            padding-left: 2%;
+                            text-align: justify;
+                        }
+                    }
+                    .branding-reason {
+                        position: relative;
+                        display: block;
+                        padding: 20px 0;
+                        .branding-reason-tit {
+                            position: relative;
+                            display: block;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            i {
+                                color: #00ADB5;
+                            }
+                        }
+                        .branding-reason-info {
+                            position: relative;
+                            display: block;
+                            width: 95%;
+                            padding-left: 2%;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.branding3 {
+    .container {
+        display: flex;
+        align-items: center;
+        padding-top: 80px;
+        .left {
+            .title {
+                margin-bottom: 32px;
+            }
+            .branding-logo {
+                position: relative;
+                display: block;
+                
+                font-size: 12px;
+                color: #222831;
+
+                padding: 120% 50% 0;
+                text-align: center;
+                background: url('../images/branding_04.png') no-repeat center;
+                background-size: contain;
+
+                transition: all 0.3s;
+
+                &:hover {
+                    color: #00ADB5;
+                }
+            }
+        }
+        .right {
+            position: relative;
+            display: block;
+
+            font-size: 13px;
+            line-height: 18px;
+            margin-left: 20px;
+
+            .branding-birth {
+                position: relative;
+                display: block;
+                padding: 20px 0;
+                .branding-brith-tit {
+                    position: relative;
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    i {
+                        color: #00ADB5;
+                    }
+                }
+                .branding-birth-info {
+                    position: relative;
+                    display: block;
+                    width: 95%;
+                    padding-left: 2%;
+                    text-align: justify;
+                }
+            }
+            .branding-reason {
+                position: relative;
+                display: block;
+                padding: 20px 0;
+                .branding-reason-tit {
+                    position: relative;
+                    display: block;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    i {
+                        color: #00ADB5;
+                    }
+                }
+                .branding-reason-info {
+                    position: relative;
+                    display: block;
+                    width: 95%;
+                    padding-left: 2%;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+/* //브렌딩 */
+
 
 /* 비주얼 */
 .visual {
@@ -354,6 +686,10 @@ body {
                         font-weight: 200;
                         line-height: 30px;
                         color: #fff;
+                        &::selection {
+                            background-color: #222831;
+                            color: #00ADB5;
+                        }
                     }
                 }
                 .frontend-deco-6 {
@@ -688,6 +1024,7 @@ body {
                             visibility: hidden;
                             opacity: 0;
                             transition: all 0.3s;
+                            cursor: pointer;
                             li {
                                 position: relative;
                                 display: block;
