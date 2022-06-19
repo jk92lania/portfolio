@@ -126,6 +126,16 @@ window.onload = function () {
       'info' : '100% 개인 작업하였습니다. swiper 동작시 이벤트를 추가 하는 방법에 대해 공부하였습니다.'
     },
     {
+      'name': '신고받기',
+      'imgurl': 'images/port_code01_001.png',
+      'imgurlbefore': 'images/port_code01_002.png',
+      'ts': 'ts',
+      'git': 'https://github.com/jk92lania/codingtest01',
+      'study': '개인',
+      'day': '3',
+      'info' : 'typescript 작성 방법과 문제 해결 작성법에 대해 공부하였습니다.'
+    },
+    {
       'name': '포트폴리오',
       'imgurl': 'images/port_prot_001.png',
       'imgurlbefore': 'images/port_prot_002.png',
